@@ -7,8 +7,9 @@ public class Grid_Movement_Should{
     
     [Test]
     public void Walk_To_Right_Cell() {
-        Grid grid = new Grid(4,4); //cria uma grid 4x4
+        Grid grid = new Grid(3,3); //cria uma grid 4x4
         GridAgent gridAgent = new GridAgent(grid); //cria um agente que vai andar na dada grid
+        gridAgent.SetAgentPositionAtGrid(Vector2Int.one);
 
         gridAgent.MoveRight();
 
