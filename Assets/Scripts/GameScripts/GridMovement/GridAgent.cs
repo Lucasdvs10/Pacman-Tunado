@@ -41,7 +41,7 @@ namespace GameScripts{
             if(!_grid.CellsGrid[xPosition,yPosition].Walkable)
                 return;
             
-            _positionInGrid = new Vector2Int(xPosition, yPosition);
+            _positionInGrid = MatrixGrid.Position(xPosition, yPosition);
         }
 
 

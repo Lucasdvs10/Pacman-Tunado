@@ -6,8 +6,14 @@ namespace GameScripts{
         private int _numRows;
         private int _numColums;
 
-        public void SetNotWalkable(Vector2Int cellPosition) {
+        public static Vector2Int Position(int i, int j) => new Vector2Int(i, j);
+        
+        public void TurnOffWalkableFlag(Vector2Int cellPosition) {
             _cellsGrid[cellPosition.x, cellPosition.y].SetWalkable(false);
+        }
+        
+        public void TurnOnWalkableFlag(Vector2Int cellPosition) {
+            _cellsGrid[cellPosition.x, cellPosition.y].SetWalkable(true);
         }
         
         private void InitializeGrid(int numRows, int numCols) {

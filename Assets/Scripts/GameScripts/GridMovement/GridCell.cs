@@ -1,6 +1,8 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace GameScripts{
+    [Serializable]
     public class GridCell{
         private bool _walkable;
         private Vector2Int _gridPosition;

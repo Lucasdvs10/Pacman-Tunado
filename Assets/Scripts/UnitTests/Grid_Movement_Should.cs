@@ -16,28 +16,28 @@ public class Grid_Movement_Should{
     public void Walk_To_Right_Cell() {
         gridAgent.MoveRight();
 
-        Assert.AreEqual(new Vector2Int(1,2), gridAgent.PositionInGrid);
+        Assert.AreEqual(MatrixGrid.Position(1,2), gridAgent.PositionInGrid);
     }
     
     [Test]
     public void Walk_To_Left_Cell() {
         gridAgent.MoveLeft();
 
-        Assert.AreEqual(new Vector2Int(1,0), gridAgent.PositionInGrid);
+        Assert.AreEqual(MatrixGrid.Position(1,0), gridAgent.PositionInGrid);
     }
     
     [Test]
     public void Walk_To_Upper_Cell() {
         gridAgent.MoveUp();
 
-        Assert.AreEqual(new Vector2Int(0,1), gridAgent.PositionInGrid);
+        Assert.AreEqual(MatrixGrid.Position(0,1), gridAgent.PositionInGrid);
     }
     
     [Test]
     public void Walk_To_Botton_Cell() {
         gridAgent.MoveDown();
 
-        Assert.AreEqual(new Vector2Int(2,1), gridAgent.PositionInGrid);
+        Assert.AreEqual(MatrixGrid.Position(2,1), gridAgent.PositionInGrid);
     }
 
     [Test]
@@ -45,7 +45,7 @@ public class Grid_Movement_Should{
         gridAgent.MoveRight();
         gridAgent.MoveRight();
         
-        Assert.AreEqual(new Vector2Int(1,2) ,gridAgent.PositionInGrid);
+        Assert.AreEqual(MatrixGrid.Position(1,2) ,gridAgent.PositionInGrid);
     }
     
     [Test]
@@ -53,16 +53,16 @@ public class Grid_Movement_Should{
         gridAgent.MoveUp();
         gridAgent.MoveUp();
         
-        Assert.AreEqual(new Vector2Int(0,1) ,gridAgent.PositionInGrid);
+        Assert.AreEqual(MatrixGrid.Position(0,1) ,gridAgent.PositionInGrid);
     }
     
     [Test]
     public void Not_Walk_To_Not_Walkable_Cells() {
-        grid.SetNotWalkable(Vector2Int.up);
+        grid.TurnOffWalkableFlag(Vector2Int.up);
         
         gridAgent.MoveUp();
 
-        Assert.AreEqual(new Vector2Int(1,1) ,gridAgent.PositionInGrid);
+        Assert.AreEqual(MatrixGrid.Position(1,1) ,gridAgent.PositionInGrid);
     }
 
     [Test]
@@ -71,7 +71,7 @@ public class Grid_Movement_Should{
         
         gridAgent.MoveLeft();
         
-        Assert.AreEqual(new Vector2Int(1,1) ,gridAgent.PositionInGrid);
+        Assert.AreEqual(MatrixGrid.Position(1,1) ,gridAgent.PositionInGrid);
     }
   
 }
