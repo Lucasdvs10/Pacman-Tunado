@@ -6,10 +6,12 @@ namespace GameScripts{
         private Vector2Int _gridPosition;
 
 
+        public void SetWalkable(bool walkableFlag) {
+            _walkable = walkableFlag;
+        }
         
-        
-        public bool Walkable1 => _walkable;
-        public Vector2Int GridPosition1 => _gridPosition;
+        public bool Walkable => _walkable;
+        public Vector2Int GridPosition => _gridPosition;
         public GridCell(Vector2Int gridPosition, bool walkable = true) {
             _walkable = walkable;
             _gridPosition = gridPosition;
