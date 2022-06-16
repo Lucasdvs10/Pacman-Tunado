@@ -1,6 +1,8 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace GameScripts{
+    [Serializable]
     public class GridAgent{
         private MatrixGrid _grid;
         private Vector2Int _positionInGrid;

@@ -12,12 +12,9 @@ namespace GameScripts{
 
         private void Awake() {
             _grid = new MatrixGrid(rows, columns, transform.position, offSetX, offSetY);
-            foreach (var cell in _grid.CellsMatrix) {
-                print($"Posicao no mundo: {cell.WorldPosition}");
-                print($"Posicao na matriz: {cell.GridPosition}");
-            }
         }
 
+        public MatrixGrid Grid => _grid;
 
         private void OnDrawGizmos() {
             if(Application.isPlaying) {

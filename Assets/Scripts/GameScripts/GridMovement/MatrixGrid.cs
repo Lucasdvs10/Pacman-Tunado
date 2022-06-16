@@ -23,7 +23,7 @@ namespace GameScripts{
         private void InitializeGrid(int numRows, int numCols, Vector2 firstCellPosition, float offsetX, float offsetY) {
             for (int i = 0; i < numRows; i++) {
                 for (int j = 0; j < numCols; j++) {
-                    _cellsMatrix[i, j] = new GridCell(i, j, firstCellPosition + new Vector2(offsetX * j, offsetY * i));
+                    _cellsMatrix[i, j] = new GridCell(i, j, firstCellPosition + new Vector2(offsetX * j, - offsetY * i));
                 }
             }
         }
