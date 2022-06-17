@@ -5,9 +5,11 @@ namespace GameScripts{
         [SerializeField] private float _movementSpeed;
         
         private Transform _realPlayerTransform;
+        private GameObject _realPlayerGameObj;
 
         private void Awake() {
             _realPlayerTransform = transform.parent.transform;
+            _realPlayerGameObj = _realPlayerTransform.gameObject;
         }
 
         private void Start() {
@@ -18,5 +20,7 @@ namespace GameScripts{
             transform.position = Vector2.MoveTowards(transform.position, _realPlayerTransform.position,
                 Time.deltaTime * _movementSpeed);
         }
+
+        public GameObject RealPlayerGameObj => _realPlayerGameObj;
     }
 }

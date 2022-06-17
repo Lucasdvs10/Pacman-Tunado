@@ -34,13 +34,14 @@ namespace GameScripts{
             _gridAgent.OnPositionChangedEvent -= InvokeEvent;
         }
         
-        public void TurnCantWalkOn() {
-            _gridAgent.CantWalk = true;
+        public void TurnCanWalkOn() {
+            _gridAgent.CanWalk = true;
         }
-        public void TurnCantWalkOff() {
-            _gridAgent.CantWalk = false;
+        public void TurnCanWalkOff() {
+            _gridAgent.CanWalk = false;
         }
 
+        public GridBehaviour GridBehaviour => _gridBehaviour;
         public Vector2Int GetPositionInGrid => _gridAgent.PositionInGrid;
 
     }

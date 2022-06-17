@@ -15,7 +15,7 @@ namespace GameScripts{
         }
         
         public void SetAgentPositionAtGrid(Vector2Int newGridPosition) {
-            if(CantWalk)
+            if(!CanWalk)
                 return;
             
             int xPosition = newGridPosition.x;
@@ -42,7 +42,7 @@ namespace GameScripts{
 
         public Vector2 WorldPosition => _worldPosition;
 
-        public bool CantWalk { get; set; }
+        public bool CanWalk { get; set; } = true;
 
         public GridAgent(MatrixGrid grid) {
             _grid = grid;

@@ -5,6 +5,8 @@ namespace GameScripts{
         private GridCell[,] _cellsMatrix;
         private int _numRows;
         private int _numColums;
+        private float _offsetX;
+        private float _offsetY;
 
         public static Vector2Int Position(int i, int j) => new Vector2Int(i, j);
         
@@ -28,6 +30,13 @@ namespace GameScripts{
             }
         }
 
+        public Vector2Int WorldPosToGridPos(Vector2 worldPos) {
+            var x = Mathf.RoundToInt(Mathf.Abs((worldPos - _cellsMatrix[0, 0].WorldPosition).y / _offsetX));
+            var y = Mathf.RoundToInt(Mathf.Abs((worldPos - _cellsMatrix[0,0].WorldPosition).x / _offsetY));
+
+            return new Vector2Int(x, y);
+        }
+        
         public int NumRows => _numRows;
 
         public int NumColums => _numColums;
@@ -37,6 +46,8 @@ namespace GameScripts{
         public MatrixGrid(int numRows, int numCols, Vector2 firstCellPosition, float offsetX, float offsetY) {
             _numRows = numRows;
             _numColums = numCols;
+            _offsetX = offsetX;
+            _offsetY = offsetY;
             
             _cellsMatrix = new GridCell[_numRows, _numColums];
 

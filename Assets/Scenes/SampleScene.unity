@@ -312,6 +312,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1711746944}
   - component: {fileID: 1711746947}
+  - component: {fileID: 1711746948}
+  - component: {fileID: 1711746949}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -386,6 +388,31 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1711746948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711746943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6682cc6489274b9da69ee0b16d44fd89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _movementSpeed: 8
+--- !u!114 &1711746949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711746943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 379e6476a7e04b42b4ce0062ea08087b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &2062842875 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3954352907865972100, guid: af982e741b45b4d4e967d2705091b7f1, type: 3}
