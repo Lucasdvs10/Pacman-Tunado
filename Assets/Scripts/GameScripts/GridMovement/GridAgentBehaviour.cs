@@ -1,15 +1,20 @@
-﻿using UnityEngine;
+﻿using System;
+using GameScripts.GameEvent;
+using UnityEngine;
 using UnityEngine.InputSystem;
 
 namespace GameScripts{
-    public class GridAgentBehaviour : MonoBehaviour{
+    public class GridAgentBehaviour : BaseEventEmmiter{
         [SerializeField] private GridBehaviour _gridBehaviour;
         [SerializeField] private Vector2Int _initialPosition;
         private GridAgent _gridAgent;
         private Vector2 _velocityDirection;
+        private bool _walkFlag;
         
         private void Start() {
-            _gridAgent = new GridAgent(_gridBehaviour.Grid, _initialPosition);
+            _gridAgent = new GridAgent(_gridBehaviour.Grid, _initialPosition);      
+            
+            _gridAgent.OnPositionChangedEvent += InvokeEvent;
         }
 
         private void Update() {
@@ -18,6 +23,11 @@ namespace GameScripts{
             MovePlayerInCurrentDirection();
         }
         
+
+        private void OnDisable() {
+            _gridAgent.OnPositionChangedEvent -= InvokeEvent;
+        }
+
         [ContextMenu("Mover pra esquerda")]
         public void MoveLeft() {
             _gridAgent.MoveLeft();
@@ -36,6 +46,13 @@ namespace GameScripts{
         [ContextMenu("Mover pra baixo")]
         public void MoveDown() {
             _gridAgent.MoveDown();
+        }
+
+        public void TurnFlagOn() {
+            _gridAgent.CantWalk = true;
+        }
+        public void TurnFlagOff() {
+            _gridAgent.CantWalk = false;
         }
 
         public void UpdateCurrentDirection(InputAction.CallbackContext ctx) {
@@ -57,6 +74,7 @@ namespace GameScripts{
             }
         }
         
-        
+        public Vector2Int GetPositionInGrid => _gridAgent.PositionInGrid;
+
     }
 }

@@ -7,6 +7,7 @@ namespace GameScripts{
         private MatrixGrid _grid;
         private Vector2Int _positionInGrid;
         private Vector2 _worldPosition;
+        public event Action OnPositionChangedEvent;
 
 
         public void MoveRight() {
@@ -46,6 +47,7 @@ namespace GameScripts{
             
             _positionInGrid = MatrixGrid.Position(xPosition, yPosition);
             _worldPosition = _grid.GetCellAtGridPosition(_positionInGrid).WorldPosition;
+            OnPositionChangedEvent?.Invoke();
         }
 
 
