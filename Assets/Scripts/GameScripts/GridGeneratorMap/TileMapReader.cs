@@ -8,7 +8,7 @@ namespace GameScripts.GridGeneratorMap{
         [SerializeField] private GridBehaviour _gridBehaviour;
         private MatrixGrid _matrixGrid;
 
-        private void OnEnable() {
+        private void Start() {
             _matrixGrid = _gridBehaviour.Grid;
 
             foreach (var gridCell in (_matrixGrid.CellsMatrix)) {
