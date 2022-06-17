@@ -6,7 +6,7 @@ namespace GameScripts{
         private MatrixGrid _playerGrid;
         private GameObject _playerGameobj;
         private Vector2Int _fakePlayerGridPosition;
-        private GridAgentBehaviour _playerGridAgentBehaviour;
+        private PlayerGridAgentBehaviour _playerPlayerGridAgentBehaviour;
         private FakePlayerMover _fakePlayerMover;
         
         private void Awake() {
@@ -15,19 +15,19 @@ namespace GameScripts{
 
         private void Start() {
             _playerGameobj = _fakePlayerMover.RealPlayerGameObj;
-            _playerGridAgentBehaviour = _playerGameobj.GetComponent<GridAgentBehaviour>();
-            _playerGrid = _playerGridAgentBehaviour.GridBehaviour.Grid;
+            _playerPlayerGridAgentBehaviour = _playerGameobj.GetComponent<PlayerGridAgentBehaviour>();
+            _playerGrid = _playerPlayerGridAgentBehaviour.GridBehaviour.Grid;
             
         }
 
         private void Update() {
             _fakePlayerGridPosition = _playerGrid.WorldPosToGridPos(transform.position);
 
-            if (_fakePlayerGridPosition == _playerGridAgentBehaviour.GetPositionInGrid) {
-                _playerGridAgentBehaviour.TurnCanWalkOn();
+            if (_fakePlayerGridPosition == _playerPlayerGridAgentBehaviour.GetPositionInGrid) {
+                _playerPlayerGridAgentBehaviour.TurnCanWalkOn();
             }
             else {
-                _playerGridAgentBehaviour.TurnCanWalkOff();
+                _playerPlayerGridAgentBehaviour.TurnCanWalkOff();
             }
         }
     }

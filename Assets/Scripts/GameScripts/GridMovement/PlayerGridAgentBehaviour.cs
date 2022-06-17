@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 namespace GameScripts{
-    public class GridAgentBehaviour : BaseEventEmmiter{
+    public class PlayerGridAgentBehaviour : BaseEventEmmiter{
         [SerializeField] private GridBehaviour _gridBehaviour;
         [SerializeField] private Vector2Int _initialPosition;
        
