@@ -1,5 +1,4 @@
-﻿using System;
-using GameScripts.GameEvent;
+﻿using GameScripts.GameEvent;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -7,20 +6,19 @@ namespace GameScripts{
     public class GridAgentBehaviour : BaseEventEmmiter{
         [SerializeField] private GridBehaviour _gridBehaviour;
         [SerializeField] private Vector2Int _initialPosition;
+       
         private GridAgent _gridAgent;
         private bool _walkFlag;
         private Vector2 _inputDirection;
         
         private void Start() {
-            _gridAgent = new GridAgent(_gridBehaviour.Grid, _initialPosition);      
-            
+            _gridAgent = new GridAgent(_gridBehaviour.Grid, _initialPosition);
             _gridAgent.OnPositionChangedEvent += InvokeEvent;
         }
 
         private void Update() {
             transform.position = _gridAgent.WorldPosition;
             MoveInGrid(_inputDirection);
-            
         }
 
         public void SetInputDirection(InputAction.CallbackContext ctx) {
