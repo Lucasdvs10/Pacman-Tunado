@@ -431,6 +431,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3954352907865972100, guid: af982e741b45b4d4e967d2705091b7f1, type: 3}
+      propertyPath: rows
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 3954352907865972100, guid: af982e741b45b4d4e967d2705091b7f1, type: 3}
+      propertyPath: columns
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 3954352907865972100, guid: af982e741b45b4d4e967d2705091b7f1, type: 3}
+      propertyPath: offSetX
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3954352907865972100, guid: af982e741b45b4d4e967d2705091b7f1, type: 3}
+      propertyPath: offSetY
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3954352907865972101, guid: af982e741b45b4d4e967d2705091b7f1, type: 3}
       propertyPath: m_RootOrder
       value: 1
