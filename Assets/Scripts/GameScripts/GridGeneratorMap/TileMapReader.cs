@@ -16,17 +16,8 @@ namespace GameScripts.GridGeneratorMap{
                     gridCell.SetWalkable(false);
                 }
             }
+            
         }
-
-
-        private void OnDisable() {
-            _matrixGrid = _gridBehaviour.Grid;
-
-            foreach (var gridCell in (_matrixGrid.CellsMatrix)) {
-                if (_tilemap.GetTile(_tilemap.WorldToCell(gridCell.WorldPosition))) {
-                    gridCell.SetWalkable(true);
-                }
-            }
-        }
+        
     }
 }
