@@ -10,22 +10,9 @@ namespace GameScripts{
         public event Action OnPositionChangedEvent;
 
 
-        public void MoveRight() {
-         SetAgentPositionAtGrid(_positionInGrid + Vector2Int.up);
+        public void Move(Vector2Int direction) {
+            SetAgentPositionAtGrid(_positionInGrid + direction);
         }
-        
-        public void MoveLeft() {
-            SetAgentPositionAtGrid(_positionInGrid + Vector2Int.down);
-        }
-        
-        public void MoveUp() {
-            SetAgentPositionAtGrid(_positionInGrid + Vector2Int.left);
-        }
-        
-        public void MoveDown() {
-            SetAgentPositionAtGrid(_positionInGrid + Vector2Int.right);
-        }
-        
         
         public void SetAgentPositionAtGrid(Vector2Int newGridPosition) {
             if(CantWalk)

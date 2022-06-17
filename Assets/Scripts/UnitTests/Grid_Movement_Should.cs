@@ -14,44 +14,44 @@ public class Grid_Movement_Should{
     
     [Test]
     public void Walk_To_Right_Cell() {
-        gridAgent.MoveRight();
+        MoveGridAgentRight();
 
         Assert.AreEqual(MatrixGrid.Position(1,2), gridAgent.PositionInGrid);
     }
     
     [Test]
     public void Walk_To_Left_Cell() {
-        gridAgent.MoveLeft();
+        MoveGridAgentLeft();
 
         Assert.AreEqual(MatrixGrid.Position(1,0), gridAgent.PositionInGrid);
     }
     
     [Test]
     public void Walk_To_Upper_Cell() {
-        gridAgent.MoveUp();
+        MoveGridAgentUp();
 
         Assert.AreEqual(MatrixGrid.Position(0,1), gridAgent.PositionInGrid);
     }
     
     [Test]
     public void Walk_To_Botton_Cell() {
-        gridAgent.MoveDown();
+        MoveGridAgentDown();
 
         Assert.AreEqual(MatrixGrid.Position(2,1), gridAgent.PositionInGrid);
     }
 
     [Test]
     public void Not_Walk_On_Grid_Right_Edge() {
-        gridAgent.MoveRight();
-        gridAgent.MoveRight();
+        MoveGridAgentRight();
+        MoveGridAgentRight();
         
         Assert.AreEqual(MatrixGrid.Position(1,2) ,gridAgent.PositionInGrid);
     }
     
     [Test]
     public void Not_Walk_On_Grid_Up_Edge() {
-        gridAgent.MoveUp();
-        gridAgent.MoveUp();
+        MoveGridAgentUp();
+        MoveGridAgentUp();
         
         Assert.AreEqual(MatrixGrid.Position(0,1) ,gridAgent.PositionInGrid);
     }
@@ -60,7 +60,7 @@ public class Grid_Movement_Should{
     public void Not_Walk_To_Not_Walkable_Cells() {
         grid.TurnOffWalkableFlag(Vector2Int.up);
         
-        gridAgent.MoveUp();
+        MoveGridAgentUp();
 
         Assert.AreEqual(MatrixGrid.Position(1,1) ,gridAgent.PositionInGrid);
     }
@@ -69,7 +69,7 @@ public class Grid_Movement_Should{
     public void Not_Walk_When_Cant_Walk_Flag_Is_True() {
         gridAgent.CantWalk = true;
         
-        gridAgent.MoveLeft();
+        MoveGridAgentLeft();
         
         Assert.AreEqual(MatrixGrid.Position(1,1) ,gridAgent.PositionInGrid);
     }
@@ -78,7 +78,7 @@ public class Grid_Movement_Should{
     public void Change_World_Position() {
         var currentWorldPosition = gridAgent.WorldPosition;
         
-        gridAgent.MoveRight();
+        MoveGridAgentRight();
         
         Assert.AreNotEqual(currentWorldPosition, gridAgent.WorldPosition);
         Assert.AreEqual(grid.CellsMatrix[1,2].WorldPosition, gridAgent.WorldPosition);
@@ -86,9 +86,24 @@ public class Grid_Movement_Should{
     
     [Test]
     public void Agent_World_Position_Must_Be_Same_As_12_Cell() {
-        gridAgent.MoveRight();
+        MoveGridAgentRight();
         
         Assert.AreEqual(grid.CellsMatrix[1,2].WorldPosition, gridAgent.WorldPosition);
+    }
+
+    private void MoveGridAgentRight() {
+        gridAgent.Move(Vector2Int.up);
+    }
+    private void MoveGridAgentLeft() {
+        gridAgent.Move(Vector2Int.down);
+    }
+    
+    private void MoveGridAgentUp() {
+        gridAgent.Move(Vector2Int.left);
+    }
+    
+    private void MoveGridAgentDown() {
+        gridAgent.Move(Vector2Int.right);
     }
     
 }

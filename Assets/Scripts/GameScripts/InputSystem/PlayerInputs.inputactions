@@ -11,7 +11,7 @@
                     "id": "771e2fa1-91cd-42a1-b9f8-519b6cadf060",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "Press",
                     "initialStateCheck": true
                 }
             ],
