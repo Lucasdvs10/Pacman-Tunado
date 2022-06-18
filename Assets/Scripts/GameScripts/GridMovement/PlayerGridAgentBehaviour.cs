@@ -1,4 +1,5 @@
 ﻿using GameScripts.GameEvent;
+using GameScripts.ScriptableSingletons;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -10,6 +11,8 @@ namespace GameScripts{
         private GridAgent _gridAgent;
         private bool _walkFlag;
         private Vector2 _inputDirection;
+
+        public SOVector2Singleton Vector2Singleton; 
         
         private void Start() {
             _gridAgent = new GridAgent(_gridBehaviour.Grid, _initialPosition);
@@ -18,12 +21,12 @@ namespace GameScripts{
 
         private void Update() {
             transform.position = _gridAgent.WorldPosition;
-            MoveInGrid(_inputDirection);
+            MoveInGrid(InputDirection);
         }
 
         public void SetInputDirection(InputAction.CallbackContext ctx) {
             if(ctx.started) return;
-            _inputDirection = ctx.ReadValue<Vector2>();
+            InputDirection = ctx.ReadValue<Vector2>();
         }
         
         public void MoveInGrid(Vector2 direction) {
@@ -44,5 +47,12 @@ namespace GameScripts{
         public GridBehaviour GridBehaviour => _gridBehaviour;
         public Vector2Int GetPositionInGrid => _gridAgent.PositionInGrid;
 
+        public Vector2 InputDirection {
+            get => _inputDirection;
+            set {
+                _inputDirection = value;
+                Vector2Singleton.Value = value;
+            }
+        }
     }
 }
