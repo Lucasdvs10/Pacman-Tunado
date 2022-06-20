@@ -5,7 +5,7 @@ using UnityEngine.AI;
 namespace GameScripts.Ghosts.NavMesh{
     public class BlueNavMeshController : MonoBehaviour{
         public GameObject jogador;
-        public SOVector2Singleton direcaoJogador;
+        public SOSingleVector2 direcaoJogador;
         private NavMeshAgent _navMeshAgent;
         
         

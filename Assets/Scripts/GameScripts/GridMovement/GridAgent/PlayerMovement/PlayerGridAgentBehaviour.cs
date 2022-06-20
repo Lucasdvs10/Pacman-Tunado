@@ -12,7 +12,7 @@ namespace GameScripts{
         private bool _walkFlag;
         private Vector2 _inputDirection;
 
-        public SOVector2Singleton Vector2Singleton; 
+        public SOSingleVector2 singleVector2; 
         
         private void Start() {
             _gridAgent = new GridAgent(_gridBehaviour.Grid, _initialPosition);
@@ -51,7 +51,7 @@ namespace GameScripts{
             get => _inputDirection;
             set {
                 _inputDirection = value;
-                Vector2Singleton.Value = value;
+                singleVector2.Value = value;
             }
         }
     }
