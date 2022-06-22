@@ -3,7 +3,7 @@
 namespace GameScripts{
     [RequireComponent(typeof(FakePlayerMover))]
     public class PlayerFlagController : MonoBehaviour{
-        private MatrixGrid _playerGrid;
+        private BaseMatrixGrid _playerGrid;
         private GameObject _playerGameobj;
         private Vector2Int _fakePlayerGridPosition;
         private PlayerGridAgentBehaviour _playerPlayerGridAgentBehaviour;

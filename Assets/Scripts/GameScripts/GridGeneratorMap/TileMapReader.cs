@@ -6,12 +6,12 @@ namespace GameScripts.GridGeneratorMap{
     public class TileMapReader : MonoBehaviour{
         [SerializeField] private Tilemap _tilemap;
         [SerializeField] private GridBehaviour _gridBehaviour;
-        private MatrixGrid _matrixGrid;
+        private BaseMatrixGrid _baseMatrixGrid;
 
         private void Start() {
-            _matrixGrid = _gridBehaviour.Grid;
+            _baseMatrixGrid = _gridBehaviour.Grid;
 
-            foreach (var gridCell in (_matrixGrid.CellsMatrix)) {
+            foreach (var gridCell in (_baseMatrixGrid.CellsMatrix)) {
                 if (_tilemap.GetTile(_tilemap.WorldToCell(gridCell.WorldPosition))) {
                     gridCell.SetWalkable(false);
                 }

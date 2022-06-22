@@ -4,7 +4,7 @@ using UnityEngine;
 namespace GameScripts{
     [Serializable]
     public class GridAgent{
-        private MatrixGrid _grid;
+        private BaseMatrixGrid _grid;
         private Vector2Int _positionInGrid;
         private Vector2 _worldPosition;
         public event Action OnPositionChangedEvent;
@@ -32,7 +32,7 @@ namespace GameScripts{
             if(!_grid.CellsMatrix[xPosition,yPosition].Walkable)
                 return;
             
-            _positionInGrid = MatrixGrid.Position(xPosition, yPosition);
+            _positionInGrid = BaseMatrixGrid.Position(xPosition, yPosition);
             _worldPosition = _grid.GetCellAtGridPosition(_positionInGrid).WorldPosition;
             OnPositionChangedEvent?.Invoke();
         }
@@ -44,12 +44,12 @@ namespace GameScripts{
 
         public bool CanWalk { get; set; } = true;
 
-        public GridAgent(MatrixGrid grid) {
+        public GridAgent(BaseMatrixGrid grid) {
             _grid = grid;
             _positionInGrid = Vector2Int.zero;
             _worldPosition = _grid.CellsMatrix[_positionInGrid.x, _positionInGrid.y].WorldPosition;
         }
-        public GridAgent(MatrixGrid grid, Vector2Int positionInGrid) {
+        public GridAgent(BaseMatrixGrid grid, Vector2Int positionInGrid) {
             _grid = grid;
             _positionInGrid = positionInGrid;
             _worldPosition = _grid.CellsMatrix[_positionInGrid.x, _positionInGrid.y].WorldPosition;

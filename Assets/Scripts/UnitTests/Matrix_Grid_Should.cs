@@ -4,11 +4,11 @@ using UnityEngine;
 
 namespace UnitTests{
     public class Matrix_Grid_Should{
-        private MatrixGrid grid;
+        private BaseMatrixGrid grid;
         
         [SetUp]
         public void Setup_Tests() {
-            grid = new MatrixGrid(3, 3, Vector2.zero, 1,1);
+            grid = new BaseMatrixGrid(3, 3, Vector2.zero, 1,1);
         }
         
         [Test]
@@ -31,7 +31,7 @@ namespace UnitTests{
         
         [Test]
         public void Return_11() {
-            grid = new MatrixGrid(3, 3, new Vector2(-10, -10), 1, 1);
+            grid = new BaseMatrixGrid(3, 3, new Vector2(-10, -10), 1, 1);
             var worldPosition = new Vector2(-11,-11);
 
             var gridPosition = grid.WorldPosToGridPos(worldPosition);

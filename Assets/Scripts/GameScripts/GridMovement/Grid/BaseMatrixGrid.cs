@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 namespace GameScripts{
-    public class MatrixGrid{
+    public class BaseMatrixGrid{
         private GridCell[,] _cellsMatrix;
         private int _numRows;
         private int _numColums;
@@ -43,7 +43,7 @@ namespace GameScripts{
 
         public GridCell[,] CellsMatrix => _cellsMatrix;
 
-        public MatrixGrid(int numRows, int numCols, Vector2 firstCellPosition, float offsetX, float offsetY) {
+        public BaseMatrixGrid(int numRows, int numCols, Vector2 firstCellPosition, float offsetX, float offsetY) {
             _numRows = numRows;
             _numColums = numCols;
             _offsetX = offsetX;

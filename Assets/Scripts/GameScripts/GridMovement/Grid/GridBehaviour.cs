@@ -7,13 +7,13 @@ namespace GameScripts{
         [SerializeField] private float offSetX;
         [SerializeField] private float offSetY;
         
-        private MatrixGrid _grid;
+        private BaseMatrixGrid _grid;
 
         private void Awake() {
-            _grid = new MatrixGrid(rows, columns, transform.position, offSetX, offSetY);
+            _grid = new BaseMatrixGrid(rows, columns, transform.position, offSetX, offSetY);
         }
 
-        public MatrixGrid Grid => _grid;
+        public BaseMatrixGrid Grid => _grid;
 
         private void OnDrawGizmos() {
             if(Application.isPlaying) {

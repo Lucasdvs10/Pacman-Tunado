@@ -4,12 +4,12 @@ using UnityEngine;
 
 namespace UnitTests{
     public class Grid_Movement_Should{
-        MatrixGrid grid; 
+        BaseMatrixGrid grid; 
         GridAgent gridAgent; 
     
         [SetUp]
         public void Setup_Tests() {
-            grid = new MatrixGrid(3,3, Vector2.zero, 1,1);
+            grid = new BaseMatrixGrid(3,3, Vector2.zero, 1,1);
             gridAgent = new GridAgent(grid, Vector2Int.one);
         }
     
@@ -17,28 +17,28 @@ namespace UnitTests{
         public void Walk_To_Right_Cell() {
             MoveGridAgentRight();
 
-            Assert.AreEqual(MatrixGrid.Position(1,2), gridAgent.PositionInGrid);
+            Assert.AreEqual(BaseMatrixGrid.Position(1,2), gridAgent.PositionInGrid);
         }
     
         [Test]
         public void Walk_To_Left_Cell() {
             MoveGridAgentLeft();
 
-            Assert.AreEqual(MatrixGrid.Position(1,0), gridAgent.PositionInGrid);
+            Assert.AreEqual(BaseMatrixGrid.Position(1,0), gridAgent.PositionInGrid);
         }
     
         [Test]
         public void Walk_To_Upper_Cell() {
             MoveGridAgentUp();
 
-            Assert.AreEqual(MatrixGrid.Position(0,1), gridAgent.PositionInGrid);
+            Assert.AreEqual(BaseMatrixGrid.Position(0,1), gridAgent.PositionInGrid);
         }
     
         [Test]
         public void Walk_To_Botton_Cell() {
             MoveGridAgentDown();
 
-            Assert.AreEqual(MatrixGrid.Position(2,1), gridAgent.PositionInGrid);
+            Assert.AreEqual(BaseMatrixGrid.Position(2,1), gridAgent.PositionInGrid);
         }
 
         [Test]
@@ -46,7 +46,7 @@ namespace UnitTests{
             MoveGridAgentRight();
             MoveGridAgentRight();
         
-            Assert.AreEqual(MatrixGrid.Position(1,2) ,gridAgent.PositionInGrid);
+            Assert.AreEqual(BaseMatrixGrid.Position(1,2) ,gridAgent.PositionInGrid);
         }
     
         [Test]
@@ -54,7 +54,7 @@ namespace UnitTests{
             MoveGridAgentUp();
             MoveGridAgentUp();
         
-            Assert.AreEqual(MatrixGrid.Position(0,1) ,gridAgent.PositionInGrid);
+            Assert.AreEqual(BaseMatrixGrid.Position(0,1) ,gridAgent.PositionInGrid);
         }
     
         [Test]
@@ -63,7 +63,7 @@ namespace UnitTests{
         
             MoveGridAgentUp();
 
-            Assert.AreEqual(MatrixGrid.Position(1,1) ,gridAgent.PositionInGrid);
+            Assert.AreEqual(BaseMatrixGrid.Position(1,1) ,gridAgent.PositionInGrid);
         }
 
         [Test]
@@ -72,7 +72,7 @@ namespace UnitTests{
         
             MoveGridAgentLeft();
         
-            Assert.AreEqual(MatrixGrid.Position(1,1) ,gridAgent.PositionInGrid);
+            Assert.AreEqual(BaseMatrixGrid.Position(1,1) ,gridAgent.PositionInGrid);
         }
 
         [Test]
