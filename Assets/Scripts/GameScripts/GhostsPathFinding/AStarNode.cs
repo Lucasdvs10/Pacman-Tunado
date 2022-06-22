@@ -9,7 +9,7 @@ namespace GameScripts.GhostsPathFinding{
         private float _distanceToNeighbour = 10f;
         private Vector2Int _endPosition;
         
-        private HashSet<AStarNode> _neighboursPositions;
+        private HashSet<AStarNode> _neighboursSet = new HashSet<AStarNode>();
         private AStarNode _parentNode;
 
         private float _fCost;
@@ -35,7 +35,7 @@ namespace GameScripts.GhostsPathFinding{
                         node.SetParentAndRecalculateCost(this);
                         matrixNode[rowPosition, colPosition] = node;
                     }
-                    _neighboursPositions.Add(matrixNode[rowPosition, colPosition]);
+                    _neighboursSet.Add(matrixNode[rowPosition, colPosition]);
                 }
                 
             }
@@ -67,5 +67,20 @@ namespace GameScripts.GhostsPathFinding{
             _endPosition = endPosition;
             _gridCell = _grid.GetCellAtGridPosition(_gridPosition);
         }
+
+        public AStarNode() {
+        }
+
+        public BaseMatrixGrid Grid => _grid;
+
+        public Vector2Int GridPosition => _gridPosition;
+
+        public GridCell GridCell => _gridCell;
+
+        public HashSet<AStarNode> NeighboursSet => _neighboursSet;
+
+        public AStarNode ParentNode => _parentNode;
+
+        public float FCost => _fCost;
     }
 }

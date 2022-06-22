@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using GameScripts;
-using GameScripts.ExtentionMethods;
 using GameScripts.GhostsPathFinding;
 using NUnit.Framework;
 using UnityEngine;
@@ -18,7 +17,6 @@ namespace UnitTests{
 
             var initialPosition = Vector2Int.right; //(1,0)
             
-            _pathQueueStraightLine.Enqueue(initialPosition);
             _pathQueueStraightLine.Enqueue(initialPosition + Vector2Int.up); //(1,1)
             _pathQueueStraightLine.Enqueue(initialPosition + Vector2Int.up * 2); //(1,2)
             
@@ -28,7 +26,27 @@ namespace UnitTests{
         public void Return_Straigh_Line_Path() {
             Queue<Vector2Int> path = _aStarCalculator.SetPath(Vector2Int.right, new Vector2Int(1, 2));
             
-            Assert.IsTrue(path.IsSameValues(_pathQueueStraightLine));   
+            Assert.AreEqual(_pathQueueStraightLine.Dequeue(), path.Dequeue()); 
+            Assert.AreEqual(_pathQueueStraightLine.Dequeue(), path.Dequeue()); 
+        }
+
+        [Test]
+        public void Return_Curve_Path() {
+            _grid.TurnOffWalkableFlag(new Vector2Int(1,1));
+            Queue<Vector2Int> path = _aStarCalculator.SetPath(Vector2Int.right, new Vector2Int(1, 2));
+
+            Queue<Vector2Int> correctpath = new Queue<Vector2Int>();
+
+            correctpath.Enqueue(new Vector2Int(2, 0));
+            correctpath.Enqueue(new Vector2Int(2, 1));
+            correctpath.Enqueue(new Vector2Int(2, 2));
+            correctpath.Enqueue(new Vector2Int(1, 2));
+            
+            Assert.AreEqual(correctpath.Dequeue(), path.Dequeue());
+            Assert.AreEqual(correctpath.Dequeue(), path.Dequeue());
+            Assert.AreEqual(correctpath.Dequeue(), path.Dequeue());
+            Assert.AreEqual(correctpath.Dequeue(), path.Dequeue());
+
         }
         
     }
