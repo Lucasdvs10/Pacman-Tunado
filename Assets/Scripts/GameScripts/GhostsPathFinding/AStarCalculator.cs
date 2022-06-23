@@ -64,7 +64,6 @@ namespace GameScripts.GhostsPathFinding{
                     starNode = node;
                 }
             }
-
             return starNode;
         }
         

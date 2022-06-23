@@ -1,4 +1,5 @@
 ﻿using GameScripts.GameEvent;
+using GameScripts.SOSingletons;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -7,6 +8,9 @@ namespace GameScripts{
         [SerializeField] private GridBehaviour _gridBehaviour;
         [SerializeField] private Vector2Int _initialPosition;
        
+        public SOSingleVector2Int GridPositionSingleton;
+
+        
         private GridAgent _gridAgent;
         private bool _walkFlag;
         private Vector2 _inputDirection;
@@ -19,6 +23,7 @@ namespace GameScripts{
         private void Update() {
             transform.position = _gridAgent.WorldPosition;
             MoveInGrid(_inputDirection);
+            GridPositionSingleton.Value = _gridAgent.PositionInGrid;
         }
 
         public void SetInputDirection(InputAction.CallbackContext ctx) {
