@@ -2,7 +2,7 @@
 using UnityEngine;
 
 namespace GameScripts.GhostsPathFinding{
-    public class AStarCalculator{
+    public class AStarCalculator : IPathCalculator{
         private BaseMatrixGrid _grid;
         private AStarNode[,] _matrixNode;
 
@@ -54,7 +54,7 @@ namespace GameScripts.GhostsPathFinding{
         }
 
 
-        public AStarNode GetCheapestNode() {
+        private AStarNode GetCheapestNode() {
             var chepeastValue = Mathf.Infinity;
             AStarNode starNode = new AStarNode();
 
