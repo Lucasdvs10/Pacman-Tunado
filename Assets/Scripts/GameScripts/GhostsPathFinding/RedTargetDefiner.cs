@@ -1,5 +1,4 @@
-﻿using System;
-using GameScripts.GameEvent;
+﻿using GameScripts.GameEvent;
 using GameScripts.SOSingletons;
 using UnityEngine;
 
@@ -20,9 +19,9 @@ namespace GameScripts.GhostsPathFinding{
             Event.Subscribe(SetTargetAndMove);
         }
 
-        // private void Update() {
-        //     SetTargetAndMove();
-        // }
+        private void OnDisable() {
+            Event.Unsubscribe(SetTargetAndMove);
+        }
 
         [ContextMenu("Setar e mover")]
         public void SetTargetAndMove() {
