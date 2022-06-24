@@ -1,13 +1,15 @@
 ﻿using GameScripts.GameEvent;
+using GameScripts.GhostsPathFinding.SOTargetDefiners;
 using GameScripts.SOSingletons;
 using UnityEngine;
 
 namespace GameScripts.GhostsPathFinding{
     
     [RequireComponent(typeof(PathFindingMoverBehaviour))]
-    public class RedTargetDefiner : MonoBehaviour{
-        [SerializeField] private SOSingleVector2Int _targetPosition;
+    public class TargetDefinerController : MonoBehaviour{
+        [SerializeField] private SOBaseTargertDefiner _targertDefiner;
         private PathFindingMoverBehaviour _ghostMover;
+        private Vector2Int _targetPosition;
 
         public SOGameEvent Event;
         
@@ -32,7 +34,8 @@ namespace GameScripts.GhostsPathFinding{
         
         [ContextMenu("Setar o target")]
         public void SetTarget() {
-            _ghostMover.SetTarget(_targetPosition.Value);
+            _targetPosition = _targertDefiner.DefineTargetPosition();
+            _ghostMover.SetTarget(_targetPosition);
         }
 
         [ContextMenu("Mover fantasma")]
