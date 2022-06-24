@@ -11,7 +11,7 @@ namespace GameScripts.GhostsPathFinding{
 
         private AStarNode _currentNode;
         
-        public Queue<Vector2Int> SetPath(Vector2Int startPosition, Vector2Int endPosition) {
+        public Queue<Vector2Int> SetTarget(Vector2Int startPosition, Vector2Int endPosition) {
             Stack<Vector2Int> stackToReturn = new Stack<Vector2Int>();
 
             var startNode = new AStarNode(_grid, startPosition, endPosition);

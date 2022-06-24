@@ -24,7 +24,7 @@ namespace UnitTests{
 
         [Test]
         public void Return_Straigh_Line_Path() {
-            Queue<Vector2Int> path = _aStarCalculator.SetPath(Vector2Int.right, new Vector2Int(1, 2));
+            Queue<Vector2Int> path = _aStarCalculator.SetTarget(Vector2Int.right, new Vector2Int(1, 2));
             
             Assert.AreEqual(_pathQueueStraightLine.Dequeue(), path.Dequeue()); 
             Assert.AreEqual(_pathQueueStraightLine.Dequeue(), path.Dequeue()); 
@@ -33,7 +33,7 @@ namespace UnitTests{
         [Test]
         public void Return_Curve_Path() {
             _grid.TurnOffWalkableFlag(new Vector2Int(1,1));
-            Queue<Vector2Int> path = _aStarCalculator.SetPath(Vector2Int.right, new Vector2Int(1, 2));
+            Queue<Vector2Int> path = _aStarCalculator.SetTarget(Vector2Int.right, new Vector2Int(1, 2));
 
             Queue<Vector2Int> correctpath = new Queue<Vector2Int>();
 

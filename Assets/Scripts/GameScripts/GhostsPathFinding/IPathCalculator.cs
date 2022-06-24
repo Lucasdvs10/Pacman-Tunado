@@ -3,6 +3,6 @@ using UnityEngine;
 
 namespace GameScripts.GhostsPathFinding{
     public interface IPathCalculator{
-        Queue<Vector2Int> SetPath(Vector2Int startPosition, Vector2Int endPosition);
+        Queue<Vector2Int> SetTarget(Vector2Int startPosition, Vector2Int endPosition);
     }
 }
