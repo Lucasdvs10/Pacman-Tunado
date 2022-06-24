@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
-using GameScripts.SOSingletons;
 using UnityEngine;
 
 namespace GameScripts.GhostsPathFinding{
     public class PathFindingMoverBehaviour : MonoBehaviour{
        [SerializeField] private GridBehaviour _gridBehaviour;
-       //todo: aqui ele vai receber um targetDefiner
-
+       
        private GridAgent _gridAgent;
        private BaseMatrixGrid _grid;
        private IPathCalculator _pathCalculator;
@@ -36,14 +33,18 @@ namespace GameScripts.GhostsPathFinding{
 
         [ContextMenu("Mova ate o target")]
         public void StartMoveToTargetCoroutine() {
-            StartCoroutine(MoveToTargetCoroutine(new Vector2Int(30,30)));
+            StartCoroutine(MoveToTargetCoroutine(_targetPosition));
+        }
+
+        public void SetTarget(Vector2Int position) {
+            _targetPosition = position;
         }
         
         private IEnumerator MoveToTargetCoroutine(Vector2Int endPosition) {
             CalculatePath(endPosition);
             while (_gridPosition != endPosition) {
-                MoveToNextInQueue();
                 yield return new WaitUntil((() => _grid.WorldPosToGridPos(_fakeGhostTransform.position) == _gridPosition));
+                MoveToNextInQueue();
             }
         }
         
@@ -57,7 +58,5 @@ namespace GameScripts.GhostsPathFinding{
             _gridAgent.SetAgentPositionAtGrid(nextPosition);
             _gridPosition = _gridAgent.PositionInGrid;
         }
-
-
     }
 }

@@ -9,7 +9,7 @@ namespace GameScripts{
         
         private BaseMatrixGrid _grid;
 
-        private void Awake() {
+        public void CreateGrid() {
             _grid = new BaseMatrixGrid(rows, columns, transform.position, offSetX, offSetY);
         }
 

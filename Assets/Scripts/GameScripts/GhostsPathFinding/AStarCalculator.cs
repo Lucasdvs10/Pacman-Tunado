@@ -6,12 +6,14 @@ namespace GameScripts.GhostsPathFinding{
         private BaseMatrixGrid _grid;
         private AStarNode[,] _matrixNode;
 
-        private HashSet<AStarNode> _openSet = new HashSet<AStarNode>();
-        private HashSet<AStarNode> _closeSet = new HashSet<AStarNode>();
+        private HashSet<AStarNode> _openSet;
+        private HashSet<AStarNode> _closeSet;
 
         private AStarNode _currentNode;
         
         public Queue<Vector2Int> SetTarget(Vector2Int startPosition, Vector2Int endPosition) {
+            _openSet = new HashSet<AStarNode>();
+            _closeSet = new HashSet<AStarNode>();
             Stack<Vector2Int> stackToReturn = new Stack<Vector2Int>();
 
             var startNode = new AStarNode(_grid, startPosition, endPosition);
