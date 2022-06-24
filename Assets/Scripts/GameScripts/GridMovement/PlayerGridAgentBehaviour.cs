@@ -18,12 +18,19 @@ namespace GameScripts{
         private void Start() {
             _gridAgent = new GridAgent(_gridBehaviour.Grid, _initialPosition);
             _gridAgent.OnPositionChangedEvent += InvokeEvent;
+            
+            transform.position = _gridAgent.WorldPosition;
+            GridPositionSingleton.Value = _gridAgent.PositionInGrid;
         }
 
         private void Update() {
-            transform.position = _gridAgent.WorldPosition;
             MoveInGrid(_inputDirection);
+        }
+
+        public override void InvokeEvent() {
+            transform.position = _gridAgent.WorldPosition;
             GridPositionSingleton.Value = _gridAgent.PositionInGrid;
+            base.InvokeEvent();
         }
 
         public void SetInputDirection(InputAction.CallbackContext ctx) {

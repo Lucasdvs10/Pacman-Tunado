@@ -17,7 +17,7 @@ namespace GameScripts{
         }
         
         public void SetAgentPositionAtGrid(Vector2Int newGridPosition) {
-            if(!CanWalk)
+            if(!CanWalk || newGridPosition == _positionInGrid)
                 return;
             
             int xPosition = newGridPosition.x;
