@@ -17974,6 +17974,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 960d08a1dea54884cb356bec8300bc04, type: 2}
     - target: {fileID: 2592729305520433957, guid: 269aad5a48c557944b13e4292696a4cf, type: 3}
+      propertyPath: _targertDefiner
+      value: 
+      objectReference: {fileID: 11400000, guid: 5add80470dfd0de4eaa1b3db7ee64429, type: 2}
+    - target: {fileID: 2592729305520433957, guid: 269aad5a48c557944b13e4292696a4cf, type: 3}
       propertyPath: _targetPosition
       value: 
       objectReference: {fileID: 11400000, guid: f35743c143ae5db4990019cd8a7f1057, type: 2}
@@ -18119,6 +18123,10 @@ PrefabInstance:
       propertyPath: _gridBehaviour
       value: 
       objectReference: {fileID: 2062842875}
+    - target: {fileID: 8965433597640332484, guid: a8dd3d9c798ec7249b1976fb8d53d124, type: 3}
+      propertyPath: PlayerDirection
+      value: 
+      objectReference: {fileID: 11400000, guid: 88a4599f776723742b60cb6965db88b4, type: 2}
     - target: {fileID: 8965433597640332484, guid: a8dd3d9c798ec7249b1976fb8d53d124, type: 3}
       propertyPath: _initialPosition.x
       value: 1

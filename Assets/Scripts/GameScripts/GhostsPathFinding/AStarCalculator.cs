@@ -8,49 +8,52 @@ namespace GameScripts.GhostsPathFinding{
 
         private HashSet<AStarNode> _openSet;
         private HashSet<AStarNode> _closeSet;
-
-        private AStarNode _currentNode;
         
         public Queue<Vector2Int> SetTarget(Vector2Int startPosition, Vector2Int endPosition) {
             _openSet = new HashSet<AStarNode>();
             _closeSet = new HashSet<AStarNode>();
+            AStarNode currentNode;
+            
             Stack<Vector2Int> stackToReturn = new Stack<Vector2Int>();
 
             var startNode = new AStarNode(_grid, startPosition, endPosition);
             _openSet.Add(startNode);
 
-            while (_openSet.Count > 0) {
-                _currentNode = GetCheapestNode();
-                _openSet.Remove(_currentNode);
-                _closeSet.Add(_currentNode);
-                _currentNode.InitializeNeighbours(ref _matrixNode);
+            while (true) {
+                if (_openSet.Count <= 0) 
+                    return null;
                 
-                if(_currentNode.GridPosition == endPosition)
+                currentNode = GetCheapestNode();
+                _openSet.Remove(currentNode);
+                _closeSet.Add(currentNode);
+                currentNode.InitializeNeighbours(ref _matrixNode);
+                
+                if(currentNode.GridPosition == endPosition)
                     break;
 
-                foreach (var neighbour in _currentNode.NeighboursSet) {
+                foreach (var neighbour in currentNode.NeighboursSet) {
                     if(_closeSet.Contains(neighbour))
                         continue;
 
                     if (!_openSet.Contains(neighbour)) {
-                        neighbour.SetParentAndRecalculateCost(_currentNode);
+                        neighbour.SetParentAndRecalculateCost(currentNode);
                         _openSet.Add(neighbour);
                     }
                     else {
                         var oldCost = neighbour.FCost;
                         var oldParent = neighbour.ParentNode;
                         
-                        neighbour.SetParentAndRecalculateCost(_currentNode);
+                        neighbour.SetParentAndRecalculateCost(currentNode);
                         
                         if(neighbour.FCost > oldCost)
                             neighbour.SetParentAndRecalculateCost(oldParent);
                     }
                 }
             }
-
-            while (_currentNode != startNode) {
-                stackToReturn.Push(_currentNode.GridPosition);
-                _currentNode = _currentNode.ParentNode;
+            
+            while (currentNode != startNode) {
+                stackToReturn.Push(currentNode.GridPosition);
+                currentNode = currentNode.ParentNode;
             }
             return new Queue<Vector2Int>(stackToReturn);
         }

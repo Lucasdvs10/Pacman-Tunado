@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace UnitTests{
     public class AStarCalculator_Should{
-        private Queue<Vector2Int> _pathQueueStraightLine = new Queue<Vector2Int>();
+        private Queue<Vector2Int> _pathQueueStraightLine;
         private BaseMatrixGrid _grid;
         private AStarCalculator _aStarCalculator;
 
@@ -16,7 +16,8 @@ namespace UnitTests{
             _aStarCalculator = new AStarCalculator(_grid);
 
             var initialPosition = Vector2Int.right; //(1,0)
-            
+
+            _pathQueueStraightLine = new Queue<Vector2Int>();
             _pathQueueStraightLine.Enqueue(initialPosition + Vector2Int.up); //(1,1)
             _pathQueueStraightLine.Enqueue(initialPosition + Vector2Int.up * 2); //(1,2)
             
@@ -48,6 +49,20 @@ namespace UnitTests{
             Assert.AreEqual(correctpath.Dequeue(), path.Dequeue());
 
         }
+        [Test]
+        public void Return_Null_When_Target_Out_of_Grid() {
+            Queue<Vector2Int> path = _aStarCalculator.SetTarget(Vector2Int.right, new Vector2Int(1,-1));
+            
+            Assert.AreEqual(null, path); 
+        }
         
+        [Test]
+        public void Return_Null_When_Target_Not_Walkable() {
+            _grid.TurnOffWalkableFlag(new Vector2Int(1,1));
+            
+            Queue<Vector2Int> path = _aStarCalculator.SetTarget(Vector2Int.right, new Vector2Int(1,1));
+            
+            Assert.AreEqual(null, path); 
+        }
     }
 }

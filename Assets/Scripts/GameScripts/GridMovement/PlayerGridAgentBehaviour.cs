@@ -9,7 +9,7 @@ namespace GameScripts{
         [SerializeField] private Vector2Int _initialPosition;
        
         public SOSingleVector2Int GridPositionSingleton;
-
+        public SOSingleVector2 PlayerDirection;
         
         private GridAgent _gridAgent;
         private bool _walkFlag;
@@ -24,7 +24,7 @@ namespace GameScripts{
         }
 
         private void Update() {
-            MoveInGrid(_inputDirection);
+            MoveInGrid(InputDirection);
         }
 
         public override void InvokeEvent() {
@@ -35,7 +35,7 @@ namespace GameScripts{
 
         public void SetInputDirection(InputAction.CallbackContext ctx) {
             if(ctx.started) return;
-            _inputDirection = ctx.ReadValue<Vector2>();
+            InputDirection = ctx.ReadValue<Vector2>();
         }
         
         public void MoveInGrid(Vector2 direction) {
@@ -56,5 +56,12 @@ namespace GameScripts{
         public GridBehaviour GridBehaviour => _gridBehaviour;
         public Vector2Int GetPositionInGrid => _gridAgent.PositionInGrid;
 
+        public Vector2 InputDirection {
+            get => _inputDirection;
+            set {
+                _inputDirection = value;
+                PlayerDirection.Value = value;
+            }
+        }
     }
 }

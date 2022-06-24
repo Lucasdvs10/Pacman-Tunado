@@ -9,7 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 782666c02d7945f6b3d2dfababafdf1a, type: 3}
-  m_Name: ChasePlayerDefiner
+  m_Script: {fileID: 11500000, guid: 04c94eeb22b7402b9c96838863936f40, type: 3}
+  m_Name: BeAheadPlayer
   m_EditorClassIdentifier: 
   PlayerPosition: {fileID: 11400000, guid: f35743c143ae5db4990019cd8a7f1057, type: 2}
+  PlayerDirection: {fileID: 11400000, guid: 88a4599f776723742b60cb6965db88b4, type: 2}
