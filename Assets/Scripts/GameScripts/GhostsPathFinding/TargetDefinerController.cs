@@ -18,29 +18,18 @@ namespace GameScripts.GhostsPathFinding{
         }
 
         private void OnEnable() {
-            Event.Subscribe(SetTargetAndMove);
+            Event.Subscribe(SetTarget);
         }
 
         private void OnDisable() {
-            Event.Unsubscribe(SetTargetAndMove);
+            Event.Unsubscribe(SetTarget);
         }
 
-        [ContextMenu("Setar e mover")]
-        public void SetTargetAndMove() {
-            SetTarget();
-            StartGhostMoving();
-            print("Settei e movi");
-        }
-        
         [ContextMenu("Setar o target")]
         public void SetTarget() {
             _targetPosition = _targertDefiner.DefineTargetPosition();
             _ghostMover.SetTarget(_targetPosition);
         }
-
-        [ContextMenu("Mover fantasma")]
-        public void StartGhostMoving() {
-            _ghostMover.StartMoveToTargetCoroutine();
-        }
+        
     }
 }

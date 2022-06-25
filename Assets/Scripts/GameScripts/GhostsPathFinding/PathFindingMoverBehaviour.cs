@@ -25,6 +25,8 @@ namespace GameScripts.GhostsPathFinding{
             _pathCalculator = new AStarCalculator(_grid);
             _gridAgent = new GridAgent(_grid, _grid.WorldPosToGridPos(transform.position));
             _gridPosition = _gridAgent.PositionInGrid;
+            
+            StartMoveToTargetCoroutine();
        }
 
         private void Update() {
@@ -33,18 +35,23 @@ namespace GameScripts.GhostsPathFinding{
 
         [ContextMenu("Mova ate o target")]
         public void StartMoveToTargetCoroutine() {
-            StartCoroutine(MoveToTargetCoroutine(_targetPosition));
+            StartCoroutine(MoveToTargetCoroutine());
         }
 
         public void SetTarget(Vector2Int position) {
             _targetPosition = position;
+            CalculatePath(_targetPosition);
         }
         
-        private IEnumerator MoveToTargetCoroutine(Vector2Int endPosition) {
-            CalculatePath(endPosition);
-            while (_gridPosition != endPosition) {
-                yield return new WaitUntil((() => _grid.WorldPosToGridPos(_fakeGhostTransform.position) == _gridPosition));
-                MoveToNextInQueue();
+        private IEnumerator MoveToTargetCoroutine() {
+            while (true) {
+                if (_gridPosition != _targetPosition) {
+                    print("Kappa");
+                    MoveToNextInQueue();
+                    yield return new WaitForSeconds(0.3f);
+                }
+                else
+                    yield return null;
             }
         }
         
