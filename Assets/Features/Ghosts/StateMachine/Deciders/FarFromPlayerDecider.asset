@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2216f4b3da464f1f859e2b2976c92108, type: 3}
   m_Name: FarFromPlayerDecider
   m_EditorClassIdentifier: 
-  _playerPositionSingleton: {fileID: 0}
-  _ghostPositionSingleton: {fileID: 0}
+  _playerPositionSingleton: {fileID: 11400000, guid: f35743c143ae5db4990019cd8a7f1057, type: 2}
+  _ghostPositionSingleton: {fileID: 11400000, guid: fbaa3ea048bc7bd4e92443b4672394df, type: 2}

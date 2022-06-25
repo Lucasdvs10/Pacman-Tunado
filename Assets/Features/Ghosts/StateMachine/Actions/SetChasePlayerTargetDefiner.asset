@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 91fb4d0d5bb942b78a4d68100225d584, type: 3}
-  m_Name: RedAttackAction
+  m_Name: SetChasePlayerTargetDefiner
   m_EditorClassIdentifier: 
   _targertDefiner: {fileID: 11400000, guid: 144a003c8e596804caf5e2dcbb724d85, type: 2}
