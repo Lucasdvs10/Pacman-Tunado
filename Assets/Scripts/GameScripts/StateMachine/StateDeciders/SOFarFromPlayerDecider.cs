@@ -6,13 +6,14 @@ namespace GameScripts.StateMachine.StateDeciders{
     public class SOFarFromPlayerDecider : SOBaseStateDecider{
         [SerializeField] private SOSingleVector2Int _playerPositionSingleton;
         [SerializeField] private SOSingleVector2Int _ghostPositionSingleton;
+        [SerializeField] private int _manhatamDistance;
 
 
         public override bool Decide(StateMachine stateMachine) {
             var distance = Mathf.Abs(_playerPositionSingleton.Value.x - _ghostPositionSingleton.Value.x) +
                            Mathf.Abs(_playerPositionSingleton.Value.y - _ghostPositionSingleton.Value.y);
 
-            return distance > 6;
+            return distance > _manhatamDistance;
         }
     }
 }
