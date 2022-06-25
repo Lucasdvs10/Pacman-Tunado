@@ -5,6 +5,7 @@ using UnityEngine;
 namespace GameScripts.GhostsPathFinding{
     public class PathFindingMoverBehaviour : MonoBehaviour{
        [SerializeField] private GridBehaviour _gridBehaviour;
+       [SerializeField] private float _cooldownMover = 0.3f;
        
        private GridAgent _gridAgent;
        private BaseMatrixGrid _grid;
@@ -39,8 +40,10 @@ namespace GameScripts.GhostsPathFinding{
         }
 
         public void SetTarget(Vector2Int position) {
-            _targetPosition = position;
-            CalculatePath(_targetPosition);
+            if(_grid.IsCellAvaible(position)) {
+                _targetPosition = position;
+                CalculatePath(_targetPosition);
+            }
         }
         
         private IEnumerator MoveToTargetCoroutine() {
@@ -48,7 +51,7 @@ namespace GameScripts.GhostsPathFinding{
                 if (_gridPosition != _targetPosition) {
                     print("Kappa");
                     MoveToNextInQueue();
-                    yield return new WaitForSeconds(0.3f);
+                    yield return new WaitForSeconds(_cooldownMover);
                 }
                 else
                     yield return null;

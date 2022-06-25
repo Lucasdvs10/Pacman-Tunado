@@ -9,6 +9,7 @@ namespace GameScripts{
     public class PlayerGridAgentBehaviour : BaseEventEmmiter{
         [SerializeField] private GridBehaviour _gridBehaviour;
         [SerializeField] private Vector2Int _initialPosition;
+        [SerializeField] private float _moverCooldown = 0.2f;
        
         public SOSingleVector2Int GridPositionSingleton;
         public SOSingleVector2 PlayerDirection;
@@ -42,7 +43,7 @@ namespace GameScripts{
             while(true){
                 if(_inputDirection != Vector2.zero) {
                     _gridAgent.Move(new Vector2Int((int) -_inputDirection.y, (int) _inputDirection.x));
-                    yield return new WaitForSeconds(0.2f);
+                    yield return new WaitForSeconds(_moverCooldown);
                 }
                 else
                     yield return null;

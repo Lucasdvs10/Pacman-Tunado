@@ -36,6 +36,15 @@ namespace GameScripts{
 
             return new Vector2Int(x, y);
         }
+
+        public bool IsCellAvaible(Vector2Int cellPosition) {
+            if (cellPosition.x < 0 || cellPosition.x >= _numRows || cellPosition.y < 0 || cellPosition.y >= _numColums)
+                return false;
+            
+            var cell = GetCellAtGridPosition(cellPosition);
+            
+            return cell.Walkable;
+        }
         
         public int NumRows => _numRows;
 
