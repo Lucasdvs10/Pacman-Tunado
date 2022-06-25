@@ -57,7 +57,6 @@ namespace GameScripts.GhostsPathFinding{
             if (_pathInGridQueue == null) return;
             
             _pathInGridQueue.TryDequeue(out var nextPosition);
-            print(nextPosition);
             _gridAgent.SetAgentPositionAtGrid(nextPosition);
             _gridPosition = _gridAgent.PositionInGrid;
         }
