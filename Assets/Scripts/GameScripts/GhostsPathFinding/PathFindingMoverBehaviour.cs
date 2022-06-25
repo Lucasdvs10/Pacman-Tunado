@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using GameScripts.SOSingletons;
 using UnityEngine;
 
 namespace GameScripts.GhostsPathFinding{
     public class PathFindingMoverBehaviour : MonoBehaviour{
        [SerializeField] private GridBehaviour _gridBehaviour;
        [SerializeField] private float _cooldownMover = 0.3f;
+
+       public SOSingleVector2Int GhostPositionSingleton;
        
        private GridAgent _gridAgent;
        private BaseMatrixGrid _grid;
@@ -25,7 +28,7 @@ namespace GameScripts.GhostsPathFinding{
             _grid = _gridBehaviour.Grid;
             _pathCalculator = new AStarCalculator(_grid);
             _gridAgent = new GridAgent(_grid, _grid.WorldPosToGridPos(transform.position));
-            _gridPosition = _gridAgent.PositionInGrid;
+            GridPosition = _gridAgent.PositionInGrid;
             
             StartMoveToTargetCoroutine();
        }
@@ -58,7 +61,7 @@ namespace GameScripts.GhostsPathFinding{
         }
         
         private void CalculatePath(Vector2Int targetPosition) {
-            _pathInGridQueue = _pathCalculator.SetTarget(_gridPosition, targetPosition);
+            _pathInGridQueue = _pathCalculator.SetTarget(GridPosition, targetPosition);
         }
         
         
@@ -67,7 +70,15 @@ namespace GameScripts.GhostsPathFinding{
             
             _pathInGridQueue.TryDequeue(out var nextPosition);
             _gridAgent.SetAgentPositionAtGrid(nextPosition);
-            _gridPosition = _gridAgent.PositionInGrid;
+            GridPosition = _gridAgent.PositionInGrid;
+        }
+
+        public Vector2Int GridPosition {
+            get => _gridPosition;
+            set {
+            _gridPosition = value;
+            GhostPositionSingleton.Value = value;
+            }
         }
     }
 }
