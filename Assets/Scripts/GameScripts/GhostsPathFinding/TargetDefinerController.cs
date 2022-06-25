@@ -30,6 +30,9 @@ namespace GameScripts.GhostsPathFinding{
             _targetPosition = _targertDefiner.DefineTargetPosition();
             _ghostMover.SetTarget(_targetPosition);
         }
-        
+
+        public void SetTargetDefiner(SOBaseTargertDefiner nextTargertDefiner) => _targertDefiner = nextTargertDefiner;
+
+
     }
 }
