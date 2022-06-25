@@ -13,7 +13,7 @@ namespace GameScripts.StateMachine.StateTrasions{
             if (_decider.Decide(stateMachine) && _stateWhenTrue != null) {
                 stateMachine.ChangeState(_stateWhenTrue);
             }
-            else if (_stateWhenFalse != null) {
+            else if (!_decider.Decide(stateMachine) &&_stateWhenFalse != null) {
                 stateMachine.ChangeState(_stateWhenFalse);
             }
         }
