@@ -59,14 +59,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fantasma Vermelho
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2461823739390650561, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
 --- !u!1 &6715126083625423576 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3758027471629843966, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
   m_PrefabInstance: {fileID: 7572760490860080934}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2592729305520433957
+--- !u!114 &5421769002576971751
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -109,6 +109,7 @@ GameObject:
   - component: {fileID: 3758027471629843907}
   - component: {fileID: 3758027471629843965}
   - component: {fileID: 2461823739390650561}
+  - component: {fileID: 1889118302659019855}
   m_Layer: 0
   m_Name: Fantasma Base
   m_TagString: Untagged
@@ -160,3 +161,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _targertDefiner: {fileID: 0}
   Event: {fileID: 11400000, guid: 960d08a1dea54884cb356bec8300bc04, type: 2}
+--- !u!114 &1889118302659019855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3758027471629843966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d1276f05b7e4b66a9777f79ee2dcd81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _initialState: {fileID: 0}
