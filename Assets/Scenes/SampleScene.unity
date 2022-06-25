@@ -10635,7 +10635,7 @@ Transform:
   - {fileID: 779442945}
   - {fileID: 632158291}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &779442944
 GameObject:
@@ -17970,17 +17970,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2592729305520433957, guid: 269aad5a48c557944b13e4292696a4cf, type: 3}
-      propertyPath: Event
-      value: 
-      objectReference: {fileID: 11400000, guid: 960d08a1dea54884cb356bec8300bc04, type: 2}
-    - target: {fileID: 2592729305520433957, guid: 269aad5a48c557944b13e4292696a4cf, type: 3}
       propertyPath: _targertDefiner
       value: 
-      objectReference: {fileID: 11400000, guid: 5add80470dfd0de4eaa1b3db7ee64429, type: 2}
-    - target: {fileID: 2592729305520433957, guid: 269aad5a48c557944b13e4292696a4cf, type: 3}
-      propertyPath: _targetPosition
-      value: 
-      objectReference: {fileID: 11400000, guid: f35743c143ae5db4990019cd8a7f1057, type: 2}
+      objectReference: {fileID: 11400000, guid: 144a003c8e596804caf5e2dcbb724d85, type: 2}
     - target: {fileID: 6715126083625423576, guid: 269aad5a48c557944b13e4292696a4cf, type: 3}
       propertyPath: m_Name
       value: Fantasma Vermelho
@@ -17991,7 +17983,7 @@ PrefabInstance:
       objectReference: {fileID: 2062842875}
     - target: {fileID: 6715126083625423589, guid: 269aad5a48c557944b13e4292696a4cf, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6715126083625423589, guid: 269aad5a48c557944b13e4292696a4cf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18033,7 +18025,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5421769002576971751, guid: 269aad5a48c557944b13e4292696a4cf, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 269aad5a48c557944b13e4292696a4cf, type: 3}
 --- !u!1001 &3954352907751925375
 PrefabInstance:
@@ -18056,7 +18049,7 @@ PrefabInstance:
       objectReference: {fileID: 779442950}
     - target: {fileID: 3954352907865972101, guid: af982e741b45b4d4e967d2705091b7f1, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3954352907865972101, guid: af982e741b45b4d4e967d2705091b7f1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18104,6 +18097,67 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af982e741b45b4d4e967d2705091b7f1, type: 3}
+--- !u!1001 &8800867147737407075
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5622115324914143581, guid: fe3e3536eb18f7948bcdde7ce56f818e, type: 3}
+      propertyPath: _gridBehaviour
+      value: 
+      objectReference: {fileID: 2062842875}
+    - target: {fileID: 5622115324914143582, guid: fe3e3536eb18f7948bcdde7ce56f818e, type: 3}
+      propertyPath: m_Name
+      value: Fantasma Azul
+      objectReference: {fileID: 0}
+    - target: {fileID: 5622115324914143587, guid: fe3e3536eb18f7948bcdde7ce56f818e, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5622115324914143587, guid: fe3e3536eb18f7948bcdde7ce56f818e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.5677338
+      objectReference: {fileID: 0}
+    - target: {fileID: 5622115324914143587, guid: fe3e3536eb18f7948bcdde7ce56f818e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -28.40268
+      objectReference: {fileID: 0}
+    - target: {fileID: 5622115324914143587, guid: fe3e3536eb18f7948bcdde7ce56f818e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5622115324914143587, guid: fe3e3536eb18f7948bcdde7ce56f818e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5622115324914143587, guid: fe3e3536eb18f7948bcdde7ce56f818e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5622115324914143587, guid: fe3e3536eb18f7948bcdde7ce56f818e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5622115324914143587, guid: fe3e3536eb18f7948bcdde7ce56f818e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5622115324914143587, guid: fe3e3536eb18f7948bcdde7ce56f818e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5622115324914143587, guid: fe3e3536eb18f7948bcdde7ce56f818e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5622115324914143587, guid: fe3e3536eb18f7948bcdde7ce56f818e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fe3e3536eb18f7948bcdde7ce56f818e, type: 3}
 --- !u!1001 &8965433598899792510
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18113,7 +18167,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8965433597188179450, guid: a8dd3d9c798ec7249b1976fb8d53d124, type: 3}
       propertyPath: _movementSpeed
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8965433597188179453, guid: a8dd3d9c798ec7249b1976fb8d53d124, type: 3}
       propertyPath: m_SortingOrder
@@ -18123,6 +18177,10 @@ PrefabInstance:
       propertyPath: _gridBehaviour
       value: 
       objectReference: {fileID: 2062842875}
+    - target: {fileID: 8965433597640332484, guid: a8dd3d9c798ec7249b1976fb8d53d124, type: 3}
+      propertyPath: _moverCooldown
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 8965433597640332484, guid: a8dd3d9c798ec7249b1976fb8d53d124, type: 3}
       propertyPath: PlayerDirection
       value: 
@@ -18141,7 +18199,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: f35743c143ae5db4990019cd8a7f1057, type: 2}
     - target: {fileID: 8965433597640332485, guid: a8dd3d9c798ec7249b1976fb8d53d124, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8965433597640332485, guid: a8dd3d9c798ec7249b1976fb8d53d124, type: 3}
       propertyPath: m_LocalPosition.x

@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b60adc8c4d643548c09cb39deda870f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 3.5
+  _speed: 4
 --- !u!1 &3758027471629843966
 GameObject:
   m_ObjectHideFlags: 0
@@ -108,6 +108,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3758027471629843907}
   - component: {fileID: 3758027471629843965}
+  - component: {fileID: 2461823739390650561}
   m_Layer: 0
   m_Name: Fantasma Base
   m_TagString: Untagged
@@ -144,3 +145,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gridBehaviour: {fileID: 0}
+  _cooldownMover: 0.25
+--- !u!114 &2461823739390650561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3758027471629843966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26ded6ee7e104cf18a1eb3b6e48ea7da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targertDefiner: {fileID: 0}
+  Event: {fileID: 11400000, guid: 960d08a1dea54884cb356bec8300bc04, type: 2}

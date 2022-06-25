@@ -49,7 +49,6 @@ namespace GameScripts.GhostsPathFinding{
         private IEnumerator MoveToTargetCoroutine() {
             while (true) {
                 if (_gridPosition != _targetPosition) {
-                    print("Kappa");
                     MoveToNextInQueue();
                     yield return new WaitForSeconds(_cooldownMover);
                 }
