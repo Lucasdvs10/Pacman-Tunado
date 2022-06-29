@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91fb4d0d5bb942b78a4d68100225d584, type: 3}
   m_Name: SetChasePomoTD
   m_EditorClassIdentifier: 
-  targetDefiner: {fileID: 0}
+  targetDefiner: {fileID: 11400000, guid: 6c4aaa9dc674ea54fa62049ac619e218, type: 2}

@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 782666c02d7945f6b3d2dfababafdf1a, type: 3}
   m_Name: ChasePlayerDefiner
   m_EditorClassIdentifier: 
-  PlayerPosition: {fileID: 11400000, guid: f35743c143ae5db4990019cd8a7f1057, type: 2}
+  MainTargetPosition: {fileID: 11400000, guid: f35743c143ae5db4990019cd8a7f1057, type: 2}

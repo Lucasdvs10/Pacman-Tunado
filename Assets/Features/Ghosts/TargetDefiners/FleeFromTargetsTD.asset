@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de7468058a164ce9b09827f0a5ed7a83, type: 3}
   m_Name: FleeFromTargetsTD
   m_EditorClassIdentifier: 
-  PlayerPosition: {fileID: 0}
-  _targetsPositionsList: []
-  _avaibleCellsSingleton: {fileID: 0}
+  MainTargetPosition: {fileID: 11400000, guid: f35743c143ae5db4990019cd8a7f1057, type: 2}
+  _targetsPositionsList:
+  - {fileID: 11400000, guid: f35743c143ae5db4990019cd8a7f1057, type: 2}
+  - {fileID: 11400000, guid: f35743c143ae5db4990019cd8a7f1057, type: 2}
+  - {fileID: 11400000, guid: 8bcee58e96f487046ac9e54b3bd701ab, type: 2}
+  - {fileID: 11400000, guid: fbaa3ea048bc7bd4e92443b4672394df, type: 2}
+  - {fileID: 11400000, guid: adcaa9712dd80ed48b8f3c54e935bb30, type: 2}
+  _avaibleCellsSingleton: {fileID: 11400000, guid: 8857427d1e530954a89d833dce3f9db0, type: 2}

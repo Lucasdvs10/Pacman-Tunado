@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: PomoAttackState
   m_EditorClassIdentifier: 
   _stateActionsOnExecuteList: []
-  _stateActionsOnStateEnterList: []
+  _stateActionsOnStateEnterList:
+  - {fileID: 11400000, guid: 48c34afbcb165b142b344f5d4a255bdf, type: 2}
   _stateActionsOnStateExitList: []
   _stateTransionsList: []
   _onExecuteStateEvent: {fileID: 0}
