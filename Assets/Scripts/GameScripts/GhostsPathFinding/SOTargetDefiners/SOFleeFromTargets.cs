@@ -33,6 +33,7 @@ namespace GameScripts.GhostsPathFinding.SOTargetDefiners{
             return GetMeanPosition(_farPointsList);
         }
 
+        //todo:Essa parte aqui merece uma refatorada. Essa função tá fazendo muita coisa
         private Vector2Int GetMeanPosition(List<Vector2Int> positionsList) {
             int sumX = 0;
             int sumY = 0;
@@ -44,7 +45,21 @@ namespace GameScripts.GhostsPathFinding.SOTargetDefiners{
             sumX /= positionsList.Count;
             sumY /= positionsList.Count;
 
-            return new Vector2Int(sumX, sumY);
+            var farestPosition = new Vector2Int(sumX, sumY);
+
+            if (_avaibleCellsSingleton.CellsDict.ContainsKey(farestPosition)) {
+                return farestPosition;
+            }
+            float minDistance = Mathf.Infinity;
+            foreach (var cells in _avaibleCellsSingleton.CellsDict.Values) {
+                var distance = Mathf.Abs(cells.GridPosition.x - farestPosition.x) +
+                               Mathf.Abs(cells.GridPosition.y - farestPosition.y);
+                if (distance < minDistance) {
+                    minDistance = distance;
+                    farestPosition = cells.GridPosition;
+                }
+            }
+            return farestPosition;
         }
     }
 }
