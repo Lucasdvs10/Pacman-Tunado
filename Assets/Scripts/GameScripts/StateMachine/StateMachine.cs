@@ -1,4 +1,5 @@
-﻿using GameScripts.StateMachine.States;
+﻿using System;
+using GameScripts.StateMachine.States;
 using UnityEngine;
 
 namespace GameScripts.StateMachine{
@@ -8,6 +9,10 @@ namespace GameScripts.StateMachine{
 
         private void Awake() {
             _currentState = _initialState;
+        }
+
+        private void Start() {
+            _currentState.OnStateEnter(this);
         }
 
         public void ChangeState(SOState nextState) {

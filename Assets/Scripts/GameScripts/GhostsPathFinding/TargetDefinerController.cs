@@ -7,7 +7,7 @@ namespace GameScripts.GhostsPathFinding{
     
     [RequireComponent(typeof(PathFindingMoverBehaviour))]
     public class TargetDefinerController : MonoBehaviour{
-        [SerializeField] private SOBaseTargertDefiner _targertDefiner;
+        private SOBaseTargetDefiner targetDefiner;
         private PathFindingMoverBehaviour _ghostMover;
         private Vector2Int _targetPosition;
 
@@ -27,11 +27,13 @@ namespace GameScripts.GhostsPathFinding{
 
         [ContextMenu("Setar o target")]
         public void SetTarget() {
-            _targetPosition = _targertDefiner.DefineTargetPosition();
+            if (targetDefiner == null) return;
+            
+            _targetPosition = targetDefiner.DefineTargetPosition();
             _ghostMover.SetTarget(_targetPosition);
         }
 
-        public void SetTargetDefiner(SOBaseTargertDefiner nextTargertDefiner) => _targertDefiner = nextTargertDefiner;
+        public void SetTargetDefiner(SOBaseTargetDefiner nextTargetDefiner) => targetDefiner = nextTargetDefiner;
 
 
     }

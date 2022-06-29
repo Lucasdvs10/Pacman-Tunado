@@ -4,11 +4,11 @@ using UnityEngine;
 
 namespace GameScripts.StateMachine.StateActions{
     public abstract class SOGhostBaseAction : SOBaseStateAction{
-        [SerializeField] protected SOBaseTargertDefiner _targertDefiner;
+        [SerializeField] protected SOBaseTargetDefiner targetDefiner;
 
         protected virtual void SetTargetDefiner(StateMachine stateMachine) {
             var targetDefinerController = stateMachine.gameObject.GetComponent<TargetDefinerController>();
-            targetDefinerController.SetTargetDefiner(_targertDefiner);
+            targetDefinerController.SetTargetDefiner(targetDefiner);
         }
     }
 }
