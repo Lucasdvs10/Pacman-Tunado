@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 1889118302659019855, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
       propertyPath: _initialState
       value: 
-      objectReference: {fileID: 11400000, guid: 6b02ee4a2f44f494fa4d55c4acc6fc88, type: 2}
+      objectReference: {fileID: 11400000, guid: a9c800cf05704d74fa05c67d9f33a152, type: 2}
     - target: {fileID: 3758027471323201575, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
       propertyPath: m_Color.b
       value: 0.71329874
@@ -77,7 +77,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: adcaa9712dd80ed48b8f3c54e935bb30, type: 2}
     - target: {fileID: 3758027471629843966, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
       propertyPath: m_Name
-      value: Fantasma Base
+      value: Fantasma Rosa
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 332922a6e76973847870736ff2b0ba74, type: 3}

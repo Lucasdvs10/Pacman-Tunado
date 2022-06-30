@@ -16,6 +16,7 @@ MonoBehaviour:
   _targetsPositionsList:
   - {fileID: 11400000, guid: f35743c143ae5db4990019cd8a7f1057, type: 2}
   - {fileID: 11400000, guid: f35743c143ae5db4990019cd8a7f1057, type: 2}
+  - {fileID: 11400000, guid: f35743c143ae5db4990019cd8a7f1057, type: 2}
   - {fileID: 11400000, guid: 8bcee58e96f487046ac9e54b3bd701ab, type: 2}
   - {fileID: 11400000, guid: fbaa3ea048bc7bd4e92443b4672394df, type: 2}
   - {fileID: 11400000, guid: adcaa9712dd80ed48b8f3c54e935bb30, type: 2}
