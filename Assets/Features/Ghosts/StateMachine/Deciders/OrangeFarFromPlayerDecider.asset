@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2216f4b3da464f1f859e2b2976c92108, type: 3}
+  m_Name: OrangeFarFromPlayerDecider
+  m_EditorClassIdentifier: 
+  _playerPositionSingleton: {fileID: 11400000, guid: f35743c143ae5db4990019cd8a7f1057, type: 2}
+  _ghostPositionSingleton: {fileID: 11400000, guid: d7389fcd809c4404ea114f7d258e851c, type: 2}
+  _manhatamDistance: 15

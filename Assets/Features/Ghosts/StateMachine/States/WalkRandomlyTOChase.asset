@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ac0a17d816644b283d24a91ff276501, type: 3}
+  m_Name: WalkRandomlyTOChase
+  m_EditorClassIdentifier: 
+  _stateActionsOnExecuteList: []
+  _stateActionsOnStateEnterList:
+  - {fileID: 11400000, guid: c947239442b7f8744b7ddff0a4b500ce, type: 2}
+  _stateActionsOnStateExitList: []
+  _stateTransionsList:
+  - {fileID: 11400000, guid: c4abf308fe8213645bd729b886189fe7, type: 2}
+  _onExecuteStateEvent: {fileID: 0}
+  _onEnterStateEvent: {fileID: 0}
+  _onExitStateEvent: {fileID: 0}

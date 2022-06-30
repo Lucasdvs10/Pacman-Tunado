@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3769b01644c483aa0f29314a1c69c4d, type: 3}
   m_Name: Transition
   m_EditorClassIdentifier: 
-  _decider: {fileID: 11400000, guid: 4fe335e3bb8c05a4fb289b11e93fbe3b, type: 2}
-  _stateWhenTrue: {fileID: 11400000, guid: 0291124bea90aca44a3b53a1b8a2c4eb, type: 2}
-  _stateWhenFalse: {fileID: 11400000, guid: 489f1dc75905aad4ab727bdd6f1a927c, type: 2}
+  _decider: {fileID: 11400000, guid: 281edc5f7a23e6642ad34317a8f654f0, type: 2}
+  _stateWhenTrue: {fileID: 11400000, guid: 64d3c7f9464ebd54b871666741198209, type: 2}
+  _stateWhenFalse: {fileID: 11400000, guid: be99e443b06b6904983aad31010dc259, type: 2}
