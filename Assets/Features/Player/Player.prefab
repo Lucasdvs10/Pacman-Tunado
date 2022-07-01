@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1155528532}
   - component: {fileID: 1155528533}
   - component: {fileID: 1155528534}
+  - component: {fileID: 1155528535}
   m_Layer: 0
   m_Name: Mochila_Ions
   m_TagString: Untagged
@@ -76,6 +77,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b70a75b43ba43a8819a44e19324a8fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1155528535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155528530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b75c18d1bc2247f098644326a5536b0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventWhenPerformButton: {fileID: 11400000, guid: a33eb17e79660b94088b7c942e75e973, type: 2}
+  _eventWhenCancelButton: {fileID: 11400000, guid: ed819e023a2233846ade6d4f3866ab03, type: 2}
 --- !u!1 &8965433597188179201
 GameObject:
   m_ObjectHideFlags: 0
@@ -283,6 +298,23 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 771e2fa1-91cd-42a1-b9f8-519b6cadf060
     m_ActionName: Player/Move[/Keyboard/d,/Keyboard/a,/Keyboard/w,/Keyboard/s]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1155528535}
+        m_TargetAssemblyTypeName: GameScripts.InputSystem.MochilaInputEventEmiter,
+          CoreAssembly
+        m_MethodName: InvokeEvents
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: fa67c326-f381-44fe-bab2-4bda0f988015
+    m_ActionName: Player/ActivateMochila[/Keyboard/space]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player

@@ -83,5 +83,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pomo de ouro
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5370406216790352215, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
