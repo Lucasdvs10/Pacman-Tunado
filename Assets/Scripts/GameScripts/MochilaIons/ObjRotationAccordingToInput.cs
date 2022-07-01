@@ -3,7 +3,7 @@ using GameScripts.SOSingletons;
 using UnityEngine;
 
 namespace GameScripts.MochilaIons{
-    public class ObjRotationAcordingToInput : MonoBehaviour{
+    public class ObjRotationAccordingToInput : MonoBehaviour{
         [SerializeField] private SOSingleVector2 _directionSingleton;
         [SerializeField] private SOSingleVector2 _playerInputDirection;
         [SerializeField] private SOGameEvent _event;
