@@ -19,12 +19,21 @@ namespace GameScripts.StateMachine.States{
             foreach (var action in _stateActionsOnStateEnterList) {
                 action.ExecuteAction(stateMachine);
             }
+            
+            foreach (var transition in _stateTransionsList) {
+                transition.OnTransitionEnter();
+            }
+            
             _onEnterStateEvent?.InvokeEvent();
         }
 
         public void OnStateExit(StateMachine stateMachine) {
             foreach (var action in _stateActionsOnStateExitList) {
                 action.ExecuteAction(stateMachine);
+            }
+
+            foreach (var transition in _stateTransionsList) {
+                transition.OnTransitionExit();
             }
             
             _onExitStateEvent?.InvokeEvent();
