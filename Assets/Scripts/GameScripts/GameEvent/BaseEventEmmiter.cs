@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 namespace GameScripts.GameEvent{
-    public abstract class BaseEventEmmiter : MonoBehaviour{
+    public class BaseEventEmmiter : MonoBehaviour{
         public SOGameEvent _gameEventToRaise;
 
         public virtual void InvokeEvent() {
