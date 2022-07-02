@@ -19,6 +19,8 @@ namespace GameScripts.GhostsPathFinding{
 
        private Transform _fakeGhostTransform;
 
+       private Coroutine k;
+
        private void Awake() {
            _fakeGhostTransform = transform.GetChild(0).transform;
            _fakeGhostTransform.parent = null;
@@ -29,7 +31,6 @@ namespace GameScripts.GhostsPathFinding{
             _pathCalculator = new AStarCalculator(_grid);
             _gridAgent = new GridAgent(_grid, _grid.WorldPosToGridPos(transform.position));
             GridPosition = _gridAgent.PositionInGrid;
-            
             StartMoveToTargetCoroutine();
        }
 
@@ -39,7 +40,10 @@ namespace GameScripts.GhostsPathFinding{
 
         [ContextMenu("Mova ate o target")]
         public void StartMoveToTargetCoroutine() {
-            StartCoroutine(MoveToTargetCoroutine());
+            k = StartCoroutine(MoveToTargetCoroutine());
+        }
+        public void StopMoveToTargetCoroutine() {
+            StopCoroutine(k);
         }
 
         public void SetTarget(Vector2Int position) {
@@ -48,7 +52,12 @@ namespace GameScripts.GhostsPathFinding{
                 CalculatePath(_targetPosition);
             }
         }
-        
+
+        public void Move(Vector2Int direction) {
+            _gridAgent.Move(direction);
+            GridPosition = _gridAgent.PositionInGrid;
+        }
+
         private IEnumerator MoveToTargetCoroutine() {
             while (true) {
                 if (_gridPosition != _targetPosition) {
@@ -72,6 +81,8 @@ namespace GameScripts.GhostsPathFinding{
             _gridAgent.SetAgentPositionAtGrid(nextPosition);
             GridPosition = _gridAgent.PositionInGrid;
         }
+
+        public GridAgent GridAgent => _gridAgent;
 
         public Vector2Int GridPosition {
             get => _gridPosition;

@@ -18012,25 +18012,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &1155528530 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1155528530, guid: a8dd3d9c798ec7249b1976fb8d53d124, type: 3}
-  m_PrefabInstance: {fileID: 8965433598899792510}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1155528535
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1155528530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b75c18d1bc2247f098644326a5536b0e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _eventWhenPerformButton: {fileID: 11400000, guid: a33eb17e79660b94088b7c942e75e973, type: 2}
-  _eventWhenCancelButton: {fileID: 11400000, guid: ed819e023a2233846ade6d4f3866ab03, type: 2}
 --- !u!114 &2062842875 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3954352907865972100, guid: af982e741b45b4d4e967d2705091b7f1, type: 3}
@@ -18321,6 +18302,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4635077099927653199, guid: c085874e5be560540bfb1c1e13f6e745, type: 3}
+      propertyPath: _gameEventToRaise
+      value: 
+      objectReference: {fileID: 11400000, guid: 9b23291611fbc594e82108b6f7def5f3, type: 2}
     - target: {fileID: 4687213655152060440, guid: c085874e5be560540bfb1c1e13f6e745, type: 3}
       propertyPath: m_Name
       value: Fantasma Rosa
@@ -18382,45 +18367,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8965433597640332482, guid: a8dd3d9c798ec7249b1976fb8d53d124, type: 3}
-      propertyPath: m_ActionEvents.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8965433597640332482, guid: a8dd3d9c798ec7249b1976fb8d53d124, type: 3}
-      propertyPath: m_ActionEvents.Array.data[1].m_ActionId
-      value: fa67c326-f381-44fe-bab2-4bda0f988015
-      objectReference: {fileID: 0}
-    - target: {fileID: 8965433597640332482, guid: a8dd3d9c798ec7249b1976fb8d53d124, type: 3}
-      propertyPath: m_ActionEvents.Array.data[1].m_ActionName
-      value: Player/ActivateMochila[/Keyboard/space]
-      objectReference: {fileID: 0}
-    - target: {fileID: 8965433597640332482, guid: a8dd3d9c798ec7249b1976fb8d53d124, type: 3}
-      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8965433597640332482, guid: a8dd3d9c798ec7249b1976fb8d53d124, type: 3}
-      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8965433597640332482, guid: a8dd3d9c798ec7249b1976fb8d53d124, type: 3}
-      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+    - target: {fileID: 1155528534, guid: a8dd3d9c798ec7249b1976fb8d53d124, type: 3}
+      propertyPath: _event
       value: 
-      objectReference: {fileID: 1155528535}
-    - target: {fileID: 8965433597640332482, guid: a8dd3d9c798ec7249b1976fb8d53d124, type: 3}
-      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8965433597640332482, guid: a8dd3d9c798ec7249b1976fb8d53d124, type: 3}
-      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: InvokeEvents
-      objectReference: {fileID: 0}
-    - target: {fileID: 8965433597640332482, guid: a8dd3d9c798ec7249b1976fb8d53d124, type: 3}
-      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: GameScripts.InputSystem.MochilaInputEventEmiter, CoreAssembly
-      objectReference: {fileID: 0}
-    - target: {fileID: 8965433597640332482, guid: a8dd3d9c798ec7249b1976fb8d53d124, type: 3}
-      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 11400000, guid: a33eb17e79660b94088b7c942e75e973, type: 2}
+    - target: {fileID: 8965433597188179450, guid: a8dd3d9c798ec7249b1976fb8d53d124, type: 3}
+      propertyPath: _movementSpeed
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8965433597640332484, guid: a8dd3d9c798ec7249b1976fb8d53d124, type: 3}
       propertyPath: _gridBehaviour
@@ -18436,7 +18389,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8965433597640332485, guid: a8dd3d9c798ec7249b1976fb8d53d124, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.28
+      value: -0.18
       objectReference: {fileID: 0}
     - target: {fileID: 8965433597640332485, guid: a8dd3d9c798ec7249b1976fb8d53d124, type: 3}
       propertyPath: m_LocalPosition.z

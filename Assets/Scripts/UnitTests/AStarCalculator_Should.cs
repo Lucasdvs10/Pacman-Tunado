@@ -20,7 +20,7 @@ namespace UnitTests{
             _pathQueueStraightLine = new Queue<Vector2Int>();
             _pathQueueStraightLine.Enqueue(initialPosition + Vector2Int.up); //(1,1)
             _pathQueueStraightLine.Enqueue(initialPosition + Vector2Int.up * 2); //(1,2)
-            
+
         }
 
         [Test]
@@ -28,7 +28,7 @@ namespace UnitTests{
             Queue<Vector2Int> path = _aStarCalculator.SetTarget(Vector2Int.right, new Vector2Int(1, 2));
             
             Assert.AreEqual(_pathQueueStraightLine.Dequeue(), path.Dequeue()); 
-            Assert.AreEqual(_pathQueueStraightLine.Dequeue(), path.Dequeue()); 
+            Assert.AreEqual(_pathQueueStraightLine.Dequeue(), path.Dequeue());
         }
 
         [Test]

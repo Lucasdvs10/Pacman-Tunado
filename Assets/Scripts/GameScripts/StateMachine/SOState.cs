@@ -17,7 +17,13 @@ namespace GameScripts.StateMachine.States{
 
         public void OnStateEnter(StateMachine stateMachine) {
             foreach (var action in _stateActionsOnStateEnterList) {
-                action.ExecuteAction(stateMachine);
+                action.OnActionEnter(stateMachine);
+            }
+            foreach (var action in _stateActionsOnExecuteList) {
+                action.OnActionEnter(stateMachine);
+            }
+            foreach (var action in _stateActionsOnStateExitList) {
+                action.OnActionEnter(stateMachine);
             }
             
             foreach (var transition in _stateTransionsList) {
@@ -28,8 +34,15 @@ namespace GameScripts.StateMachine.States{
         }
 
         public void OnStateExit(StateMachine stateMachine) {
+
+            foreach (var action in _stateActionsOnStateEnterList) {
+                action.OnActionExit(stateMachine);
+            }
+            foreach (var action in _stateActionsOnExecuteList) {
+                action.OnActionExit(stateMachine);
+            }
             foreach (var action in _stateActionsOnStateExitList) {
-                action.ExecuteAction(stateMachine);
+                action.OnActionExit(stateMachine);
             }
 
             foreach (var transition in _stateTransionsList) {

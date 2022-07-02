@@ -1,5 +1,4 @@
-﻿using GameScripts.GameEvent;
-using GameScripts.StateMachine.StateDeciders;
+﻿using GameScripts.StateMachine.StateDeciders;
 using GameScripts.StateMachine.States;
 using UnityEngine;
 

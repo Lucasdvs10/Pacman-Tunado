@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2ac0a17d816644b283d24a91ff276501, type: 3}
-  m_Name: PinkAttackState
+  m_Name: PinkSugado
   m_EditorClassIdentifier: 
   _stateActionsOnExecuteList: []
   _stateActionsOnStateEnterList:
-  - {fileID: 11400000, guid: 414c2d96d8c117b4281e9e9a9d57f59e, type: 2}
+  - {fileID: 11400000, guid: 08746d411a16d8e47a6dad3bfe02955d, type: 2}
   _stateActionsOnStateExitList: []
   _stateTransionsList:
-  - {fileID: 11400000, guid: a0773d271ade4504a92debc2af4408f5, type: 2}
+  - {fileID: 11400000, guid: c045aaf3dd2e09b47a621b93fee4d0e8, type: 2}
   _onExecuteStateEvent: {fileID: 0}
   _onEnterStateEvent: {fileID: 0}
   _onExitStateEvent: {fileID: 0}
