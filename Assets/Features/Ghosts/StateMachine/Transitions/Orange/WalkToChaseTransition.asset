@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: WalkToChaseTransition
   m_EditorClassIdentifier: 
   _decider: {fileID: 11400000, guid: 281edc5f7a23e6642ad34317a8f654f0, type: 2}
-  _stateWhenTrue: {fileID: 11400000, guid: 64d3c7f9464ebd54b871666741198209, type: 2}
+  _stateWhenTrue: {fileID: 0}
   _stateWhenFalse: {fileID: 11400000, guid: be99e443b06b6904983aad31010dc259, type: 2}

@@ -138,6 +138,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fantasma Azul
       objectReference: {fileID: 0}
+    - target: {fileID: 5622115324914143582, guid: fe3e3536eb18f7948bcdde7ce56f818e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5622115324914143587, guid: fe3e3536eb18f7948bcdde7ce56f818e, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -18038,6 +18042,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fantasma Vermelho
       objectReference: {fileID: 0}
+    - target: {fileID: 6715126083625423576, guid: 269aad5a48c557944b13e4292696a4cf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6715126083625423579, guid: 269aad5a48c557944b13e4292696a4cf, type: 3}
       propertyPath: _gridBehaviour
       value: 
@@ -18106,6 +18114,10 @@ PrefabInstance:
     - target: {fileID: 371961455776328840, guid: 1362efe827dc4754b8e2019af12e266c, type: 3}
       propertyPath: m_Name
       value: Pomo de ouro
+      objectReference: {fileID: 0}
+    - target: {fileID: 371961455776328840, guid: 1362efe827dc4754b8e2019af12e266c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 371961455776328843, guid: 1362efe827dc4754b8e2019af12e266c, type: 3}
       propertyPath: _gridBehaviour
@@ -18249,6 +18261,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fantasma Laranja
       objectReference: {fileID: 0}
+    - target: {fileID: 4628890998288382350, guid: 1a266e86a19f0ce4bbda4674cee1448c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4628890998288382387, guid: 1a266e86a19f0ce4bbda4674cee1448c, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -18310,6 +18326,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fantasma Rosa
       objectReference: {fileID: 0}
+    - target: {fileID: 4687213655152060440, guid: c085874e5be560540bfb1c1e13f6e745, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4687213655152060443, guid: c085874e5be560540bfb1c1e13f6e745, type: 3}
       propertyPath: _gridBehaviour
       value: 
@@ -18320,11 +18340,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4687213655152060453, guid: c085874e5be560540bfb1c1e13f6e745, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.86
+      value: 1.33
       objectReference: {fileID: 0}
     - target: {fileID: 4687213655152060453, guid: c085874e5be560540bfb1c1e13f6e745, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -22.584204
+      value: -5.72
       objectReference: {fileID: 0}
     - target: {fileID: 4687213655152060453, guid: c085874e5be560540bfb1c1e13f6e745, type: 3}
       propertyPath: m_LocalPosition.z
