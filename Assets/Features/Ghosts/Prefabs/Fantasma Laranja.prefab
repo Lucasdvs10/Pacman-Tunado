@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5370406216790352215, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
+      propertyPath: _gameEventToRaise
+      value: 
+      objectReference: {fileID: 11400000, guid: a0938f053b0458a4dbd388d213eeaa75, type: 2}
     - target: {fileID: 1889118302659019855, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
       propertyPath: _initialState
       value: 
@@ -29,11 +33,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3758027471629843907, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.530499
+      value: 15.82
       objectReference: {fileID: 0}
     - target: {fileID: 3758027471629843907, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -29.461292
+      value: -22.52
       objectReference: {fileID: 0}
     - target: {fileID: 3758027471629843907, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
       propertyPath: m_LocalPosition.z

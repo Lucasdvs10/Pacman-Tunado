@@ -138,10 +138,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fantasma Azul
       objectReference: {fileID: 0}
-    - target: {fileID: 5622115324914143582, guid: fe3e3536eb18f7948bcdde7ce56f818e, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5622115324914143587, guid: fe3e3536eb18f7948bcdde7ce56f818e, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -199,6 +195,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -272,6 +269,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a66860931ac44a88d66181f6e5601f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _event: {fileID: 11400000, guid: 43add53e44813374883267c6676ec9c5, type: 2}
 --- !u!1 &632158290
 GameObject:
   m_ObjectHideFlags: 0
@@ -18034,26 +18044,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5421769002576971751, guid: 269aad5a48c557944b13e4292696a4cf, type: 3}
-      propertyPath: targetDefiner
-      value: 
-      objectReference: {fileID: 11400000, guid: 144a003c8e596804caf5e2dcbb724d85, type: 2}
     - target: {fileID: 6715126083625423576, guid: 269aad5a48c557944b13e4292696a4cf, type: 3}
       propertyPath: m_Name
       value: Fantasma Vermelho
-      objectReference: {fileID: 0}
-    - target: {fileID: 6715126083625423576, guid: 269aad5a48c557944b13e4292696a4cf, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6715126083625423579, guid: 269aad5a48c557944b13e4292696a4cf, type: 3}
       propertyPath: _gridBehaviour
       value: 
       objectReference: {fileID: 2062842875}
-    - target: {fileID: 6715126083625423579, guid: 269aad5a48c557944b13e4292696a4cf, type: 3}
-      propertyPath: GhostPositionSingleton
-      value: 
-      objectReference: {fileID: 11400000, guid: fbaa3ea048bc7bd4e92443b4672394df, type: 2}
     - target: {fileID: 6715126083625423589, guid: 269aad5a48c557944b13e4292696a4cf, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -18098,10 +18096,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8295813707032554345, guid: 269aad5a48c557944b13e4292696a4cf, type: 3}
-      propertyPath: _initialState
-      value: 
-      objectReference: {fileID: 11400000, guid: d5483b1222b18eb439626aa0ae8ffa90, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 269aad5a48c557944b13e4292696a4cf, type: 3}
 --- !u!1001 &3644621396464873274
@@ -18167,6 +18161,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7184064581119756487, guid: 1362efe827dc4754b8e2019af12e266c, type: 3}
+      propertyPath: _gameEventToRaise
+      value: 
+      objectReference: {fileID: 11400000, guid: d38eb83c390c44548a1a347bc77b415a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1362efe827dc4754b8e2019af12e266c, type: 3}
 --- !u!1001 &3954352907751925375
@@ -18261,10 +18259,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fantasma Laranja
       objectReference: {fileID: 0}
-    - target: {fileID: 4628890998288382350, guid: 1a266e86a19f0ce4bbda4674cee1448c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4628890998288382387, guid: 1a266e86a19f0ce4bbda4674cee1448c, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -18318,17 +18312,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4635077099927653199, guid: c085874e5be560540bfb1c1e13f6e745, type: 3}
-      propertyPath: _gameEventToRaise
-      value: 
-      objectReference: {fileID: 11400000, guid: 9b23291611fbc594e82108b6f7def5f3, type: 2}
     - target: {fileID: 4687213655152060440, guid: c085874e5be560540bfb1c1e13f6e745, type: 3}
       propertyPath: m_Name
       value: Fantasma Rosa
-      objectReference: {fileID: 0}
-    - target: {fileID: 4687213655152060440, guid: c085874e5be560540bfb1c1e13f6e745, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4687213655152060443, guid: c085874e5be560540bfb1c1e13f6e745, type: 3}
       propertyPath: _gridBehaviour
@@ -18340,11 +18326,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4687213655152060453, guid: c085874e5be560540bfb1c1e13f6e745, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.33
+      value: 14.08
       objectReference: {fileID: 0}
     - target: {fileID: 4687213655152060453, guid: c085874e5be560540bfb1c1e13f6e745, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.72
+      value: -22.48
       objectReference: {fileID: 0}
     - target: {fileID: 4687213655152060453, guid: c085874e5be560540bfb1c1e13f6e745, type: 3}
       propertyPath: m_LocalPosition.z

@@ -10,15 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2ac0a17d816644b283d24a91ff276501, type: 3}
-  m_Name: ChaseToWalkRandomly
+  m_Name: RedSugado
   m_EditorClassIdentifier: 
   _stateActionsOnExecuteList: []
   _stateActionsOnStateEnterList:
-  - {fileID: 11400000, guid: 037645378c0b14a4e88d71bed97ed0b1, type: 2}
+  - {fileID: 11400000, guid: 08746d411a16d8e47a6dad3bfe02955d, type: 2}
   _stateActionsOnStateExitList: []
   _stateTransionsList:
-  - {fileID: 11400000, guid: 4c95cf4a7c457c947b04f6698bc168d0, type: 2}
-  - {fileID: 11400000, guid: 7fcfc94dd24aaf04bbad7f601dd6e626, type: 2}
+  - {fileID: 11400000, guid: d0a6d2f72e53d1b48941a69d4d91700e, type: 2}
   _onExecuteStateEvent: {fileID: 0}
   _onEnterStateEvent: {fileID: 0}
   _onExitStateEvent: {fileID: 0}

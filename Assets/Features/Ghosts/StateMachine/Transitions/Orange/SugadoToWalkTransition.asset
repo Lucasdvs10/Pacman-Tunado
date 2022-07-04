@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3769b01644c483aa0f29314a1c69c4d, type: 3}
+  m_Name: SugadoToWalkTransition
+  m_EditorClassIdentifier: 
+  _decider: {fileID: 11400000, guid: 1728836ecfc1cd0459fa4c25aa21399d, type: 2}
+  _stateWhenTrue: {fileID: 11400000, guid: 64d3c7f9464ebd54b871666741198209, type: 2}
+  _stateWhenFalse: {fileID: 0}
