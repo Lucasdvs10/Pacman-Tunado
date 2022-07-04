@@ -1,5 +1,4 @@
-﻿using System;
-using GameScripts.StateMachine.States;
+﻿using GameScripts.StateMachine.States;
 using UnityEngine;
 
 namespace GameScripts.StateMachine{

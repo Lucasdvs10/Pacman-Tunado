@@ -1,5 +1,4 @@
-﻿using System;
-using GameScripts.GameEvent;
+﻿using GameScripts.GameEvent;
 using UnityEngine;
 
 namespace GameScripts.MochilaIons{
@@ -27,7 +26,7 @@ namespace GameScripts.MochilaIons{
             var otherTransform = hit.transform;
 
             if (otherTransform == null) return;
-            
+
             var otherMochilaDetectable = otherTransform.GetComponent<IMochilaRaycastDetectable>();
             
             otherMochilaDetectable?.RespondToRaycastDetection();

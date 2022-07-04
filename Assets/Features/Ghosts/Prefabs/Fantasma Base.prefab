@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3758027471323201569}
   - component: {fileID: 3758027471323201575}
   - component: {fileID: 3758027471323201568}
-  - component: {fileID: 4326038863516871922}
-  - component: {fileID: 5961822827485288881}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -100,35 +98,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 4
---- !u!58 &4326038863516871922
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3758027471323201570}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
---- !u!114 &5961822827485288881
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3758027471323201570}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1487977b05d54f58a44e94cf97025997, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameEventToRaise: {fileID: 11400000, guid: 43add53e44813374883267c6676ec9c5, type: 2}
 --- !u!1 &3758027471629843966
 GameObject:
   m_ObjectHideFlags: 0
@@ -141,8 +110,10 @@ GameObject:
   - component: {fileID: 3758027471629843965}
   - component: {fileID: 2461823739390650561}
   - component: {fileID: 1889118302659019855}
-  - component: {fileID: -4493320132692197276}
   - component: {fileID: -5370406216790352215}
+  - component: {fileID: 1822483076269149368}
+  - component: {fileID: 7162197604560063828}
+  - component: {fileID: 2345742799885950822}
   m_Layer: 0
   m_Name: Fantasma Base
   m_TagString: Untagged
@@ -207,7 +178,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _initialState: {fileID: 0}
---- !u!50 &-4493320132692197276
+--- !u!114 &-5370406216790352215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3758027471629843966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41790a617985479f9a2159b6cfecfeed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEventToRaise: {fileID: 0}
+--- !u!58 &1822483076269149368
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3758027471629843966}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.34
+--- !u!114 &7162197604560063828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3758027471629843966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1487977b05d54f58a44e94cf97025997, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEventToRaise: {fileID: 11400000, guid: 43add53e44813374883267c6676ec9c5, type: 2}
+  _stateEventEnterToListen: []
+  _stateEventExitToListen: []
+--- !u!50 &2345742799885950822
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -228,16 +243,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &-5370406216790352215
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3758027471629843966}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41790a617985479f9a2159b6cfecfeed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameEventToRaise: {fileID: 0}
