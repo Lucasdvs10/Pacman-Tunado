@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetDefiner: {fileID: 0}
   _direction: {fileID: 11400000, guid: 65be8a2d1db90bd42994b9fcd205cb18, type: 2}
+  _playerPosition: {fileID: 11400000, guid: f35743c143ae5db4990019cd8a7f1057, type: 2}
+  _eventToRaiseWhenSamePositionAsPlayer: {fileID: 11400000, guid: 2fa05950a89a8a64da0b6db5858e3cf1, type: 2}

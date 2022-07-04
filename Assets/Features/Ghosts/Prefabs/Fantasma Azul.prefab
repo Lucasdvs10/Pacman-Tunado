@@ -80,6 +80,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3758027471629843965, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
+      propertyPath: _gameEventToRaise
+      value: 
+      objectReference: {fileID: 11400000, guid: 836bb86922f83684f8fb6ba21020bbd0, type: 2}
+    - target: {fileID: 3758027471629843965, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
       propertyPath: GhostPositionSingleton
       value: 
       objectReference: {fileID: 11400000, guid: 8bcee58e96f487046ac9e54b3bd701ab, type: 2}
@@ -111,5 +115,9 @@ PrefabInstance:
       propertyPath: _stateEventEnterToListen.Array.data[1]
       value: 
       objectReference: {fileID: 11400000, guid: 2b8fde1fd9432d54ba5a54f9945a2c6f, type: 2}
+    - target: {fileID: 7162197604560063828, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
+      propertyPath: _eventToListen
+      value: 
+      objectReference: {fileID: 11400000, guid: 836bb86922f83684f8fb6ba21020bbd0, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 332922a6e76973847870736ff2b0ba74, type: 3}

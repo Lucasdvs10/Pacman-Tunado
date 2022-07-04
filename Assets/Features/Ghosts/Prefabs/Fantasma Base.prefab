@@ -111,7 +111,6 @@ GameObject:
   - component: {fileID: 2461823739390650561}
   - component: {fileID: 1889118302659019855}
   - component: {fileID: -5370406216790352215}
-  - component: {fileID: 1822483076269149368}
   - component: {fileID: 7162197604560063828}
   - component: {fileID: 2345742799885950822}
   m_Layer: 0
@@ -191,22 +190,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameEventToRaise: {fileID: 0}
---- !u!58 &1822483076269149368
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3758027471629843966}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.34
 --- !u!114 &7162197604560063828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -222,6 +205,8 @@ MonoBehaviour:
   _gameEventToRaise: {fileID: 11400000, guid: 43add53e44813374883267c6676ec9c5, type: 2}
   _stateEventEnterToListen: []
   _stateEventExitToListen: []
+  _playerPosition: {fileID: 11400000, guid: f35743c143ae5db4990019cd8a7f1057, type: 2}
+  _eventToListen: {fileID: 11400000, guid: 960d08a1dea54884cb356bec8300bc04, type: 2}
 --- !u!50 &2345742799885950822
 Rigidbody2D:
   serializedVersion: 4

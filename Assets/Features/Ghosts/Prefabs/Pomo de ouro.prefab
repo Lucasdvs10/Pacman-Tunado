@@ -76,6 +76,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3758027471629843965, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
+      propertyPath: _gameEventToRaise
+      value: 
+      objectReference: {fileID: 11400000, guid: a16c65e68fa1f1d40a505a855e72d349, type: 2}
+    - target: {fileID: 3758027471629843965, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
       propertyPath: GhostPositionSingleton
       value: 
       objectReference: {fileID: 11400000, guid: 209b2a0b0392cf74b855c041943e8abc, type: 2}
@@ -83,6 +87,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pomo de ouro
       objectReference: {fileID: 0}
+    - target: {fileID: 7162197604560063828, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
+      propertyPath: _eventToListen
+      value: 
+      objectReference: {fileID: 11400000, guid: 960d08a1dea54884cb356bec8300bc04, type: 2}
     m_RemovedComponents:
     - {fileID: -5370406216790352215, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 332922a6e76973847870736ff2b0ba74, type: 3}

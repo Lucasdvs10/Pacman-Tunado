@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using GameScripts.GameEvent;
 using GameScripts.SOSingletons;
 using UnityEngine;
 
 namespace GameScripts.GhostsPathFinding{
-    public class PathFindingMoverBehaviour : MonoBehaviour{
+    public class PathFindingMoverBehaviour : BaseEventEmmiter{
        [SerializeField] private GridBehaviour _gridBehaviour;
        [SerializeField] private float _cooldownMover = 0.3f;
 
@@ -80,6 +81,7 @@ namespace GameScripts.GhostsPathFinding{
             _pathInGridQueue.TryDequeue(out var nextPosition);
             _gridAgent.SetAgentPositionAtGrid(nextPosition);
             GridPosition = _gridAgent.PositionInGrid;
+            InvokeEvent();
         }
 
         public GridAgent GridAgent => _gridAgent;
