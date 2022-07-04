@@ -9,7 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a96195b47504eb5b1b9b1a2fa03dea3, type: 3}
-  m_Name: MochilaBatteryAmountSingleton
+  m_Script: {fileID: 11500000, guid: 64bad20a0f8445b89c6996c290597d4c, type: 3}
+  m_Name: BatteryAmountChanged
   m_EditorClassIdentifier: 
-  Value: 0
