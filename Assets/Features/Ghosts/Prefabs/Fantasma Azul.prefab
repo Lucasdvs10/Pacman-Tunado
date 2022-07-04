@@ -37,11 +37,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3758027471629843907, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20.06
+      value: 20.27
       objectReference: {fileID: 0}
     - target: {fileID: 3758027471629843907, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -22.57
+      value: -22.5
       objectReference: {fileID: 0}
     - target: {fileID: 3758027471629843907, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
       propertyPath: m_LocalPosition.z
@@ -87,5 +87,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fantasma Azul
       objectReference: {fileID: 0}
+    - target: {fileID: 5961822827485288881, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
+      propertyPath: _stateEventExitToListen.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5961822827485288881, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
+      propertyPath: _stateEventEnterToListen.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5961822827485288881, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
+      propertyPath: _stateEventExitToListen.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: f4c3161bc5507ac44b4792717b6ef22d, type: 2}
+    - target: {fileID: 5961822827485288881, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
+      propertyPath: _stateEventExitToListen.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 7b06a80d9f612ba47bba723e94986bd3, type: 2}
+    - target: {fileID: 5961822827485288881, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
+      propertyPath: _stateEventEnterToListen.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 74b0f78d88a6d96489ebd3b32d6d4aae, type: 2}
+    - target: {fileID: 5961822827485288881, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
+      propertyPath: _stateEventEnterToListen.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 2b8fde1fd9432d54ba5a54f9945a2c6f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 332922a6e76973847870736ff2b0ba74, type: 3}

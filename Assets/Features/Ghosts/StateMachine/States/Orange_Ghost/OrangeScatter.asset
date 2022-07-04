@@ -19,5 +19,5 @@ MonoBehaviour:
   _stateTransionsList:
   - {fileID: 11400000, guid: 6dda3a879d4d51f44933f2f79bc1eea8, type: 2}
   _onExecuteStateEvent: {fileID: 0}
-  _onEnterStateEvent: {fileID: 0}
-  _onExitStateEvent: {fileID: 0}
+  _onEnterStateEvent: {fileID: 11400000, guid: d84a7010156bfae40aeca3f05fee83c1, type: 2}
+  _onExitStateEvent: {fileID: 11400000, guid: ca2d443fb5882f249bb295ea6be156d0, type: 2}

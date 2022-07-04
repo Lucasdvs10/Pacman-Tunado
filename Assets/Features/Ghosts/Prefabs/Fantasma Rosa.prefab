@@ -83,5 +83,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fantasma Rosa
       objectReference: {fileID: 0}
+    - target: {fileID: 5961822827485288881, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
+      propertyPath: _stateEventExitToListen.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5961822827485288881, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
+      propertyPath: _stateEventEnterToListen.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5961822827485288881, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
+      propertyPath: _stateEventExitToListen.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 32c1bcd4af4c0434ea10937c7d301401, type: 2}
+    - target: {fileID: 5961822827485288881, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
+      propertyPath: _stateEventExitToListen.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 16fdb3bfd52efe64d9d45a17611b0f31, type: 2}
+    - target: {fileID: 5961822827485288881, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
+      propertyPath: _stateEventEnterToListen.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 577550f020491264e965214086f2e16d, type: 2}
+    - target: {fileID: 5961822827485288881, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
+      propertyPath: _stateEventEnterToListen.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: fe6611d026893814090789c34dd401f5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
