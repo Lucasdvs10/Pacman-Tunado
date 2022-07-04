@@ -13,6 +13,7 @@ namespace GameScripts.MochilaIons{
 
         private void Awake() {
             _raycastEmmiter = GetComponent<RaycastEmmiter>();
+            _batteryController = GetComponent<BatteryController>();
         }
 
         private void OnEnable() {
