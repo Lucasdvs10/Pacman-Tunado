@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a96195b47504eb5b1b9b1a2fa03dea3, type: 3}
   m_Name: PointsSingleton
   m_EditorClassIdentifier: 
-  Value: 20550
+  Value: 750

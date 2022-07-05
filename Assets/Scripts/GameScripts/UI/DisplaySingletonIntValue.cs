@@ -13,9 +13,7 @@ public class DisplaySingletonIntValue : MonoBehaviour{
     private void Awake() {
         _text = GetComponent<TextMeshProUGUI>();
     }
-
-    private void Start() {
-    }
+    
 
     private void OnEnable() {
         _event.Subscribe(UpdateText);

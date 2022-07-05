@@ -1,9 +1,10 @@
-﻿using GameScripts.SOSingletons;
+﻿using GameScripts.GameEvent;
+using GameScripts.SOSingletons;
 using UnityEngine;
 
 namespace GameScripts.Pontuation{
     [RequireComponent(typeof(Collider2D))]
-    public class PointsAdderOnPlayerCollision : MonoBehaviour{
+    public class PointsAdderOnPlayerCollision : BaseEventEmmiter{
         [SerializeField] private SOSingleInt _pointsSingleton;
         [SerializeField] private int _pointsAmountValue;
         
@@ -18,6 +19,7 @@ namespace GameScripts.Pontuation{
 
         public void AddAmount() {
             _pointsSingleton.Value += _pointsAmountValue;
+            InvokeEvent();
         }
         
     }
