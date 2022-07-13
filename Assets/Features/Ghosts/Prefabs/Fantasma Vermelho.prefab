@@ -15,6 +15,10 @@ PrefabInstance:
       propertyPath: _initialState
       value: 
       objectReference: {fileID: 11400000, guid: d5483b1222b18eb439626aa0ae8ffa90, type: 2}
+    - target: {fileID: 3758027471323201575, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3758027471629843907, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -75,6 +79,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fantasma Vermelho
       objectReference: {fileID: 0}
+    - target: {fileID: 5553855893392473052, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
+      propertyPath: _eventToListen
+      value: 
+      objectReference: {fileID: 11400000, guid: e3a4b5316e788d14484019d578df5c63, type: 2}
     - target: {fileID: 5961822827485288881, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
       propertyPath: _stateEventExitToListen.Array.size
       value: 2
@@ -103,8 +111,37 @@ PrefabInstance:
       propertyPath: _eventToListen
       value: 
       objectReference: {fileID: 11400000, guid: 8fc3065c14ff0d04091098ceaabb5b20, type: 2}
+    - target: {fileID: 7162197604560063828, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
+      propertyPath: _stateEventExitToListen.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7162197604560063828, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
+      propertyPath: _stateEventEnterToListen.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7162197604560063828, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
+      propertyPath: _stateEventExitToListen.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 63252581dcdafdd4985ae3882a52a72b, type: 2}
+    - target: {fileID: 7162197604560063828, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
+      propertyPath: _stateEventExitToListen.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: c496a6442c0978749872b1895b26f171, type: 2}
+    - target: {fileID: 7162197604560063828, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
+      propertyPath: _stateEventEnterToListen.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 7eb840506efa29a46ba1f297c02a65a3, type: 2}
+    - target: {fileID: 7162197604560063828, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
+      propertyPath: _stateEventEnterToListen.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 8ba96da3193bc6549acecf4772b09c5b, type: 2}
+    - target: {fileID: 7181502792200813894, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
+      propertyPath: _eventToListen
+      value: 
+      objectReference: {fileID: 11400000, guid: 10ed40df461668c40a7890ec8ce1f92a, type: 2}
     m_RemovedComponents:
     - {fileID: 2461823739390650561, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
+    - {fileID: -8082799838755819826, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
 --- !u!1 &6715126083625423576 stripped
 GameObject:

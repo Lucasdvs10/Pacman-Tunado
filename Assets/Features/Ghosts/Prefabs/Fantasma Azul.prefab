@@ -31,6 +31,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3758027471323201575, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3758027471629843907, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -91,6 +95,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fantasma Azul
       objectReference: {fileID: 0}
+    - target: {fileID: 3758027471629843966, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5553855893392473052, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
+      propertyPath: _eventToListen
+      value: 
+      objectReference: {fileID: 11400000, guid: a1185f3dee574e442a52d0aa0619dc4f, type: 2}
     - target: {fileID: 5961822827485288881, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
       propertyPath: _stateEventExitToListen.Array.size
       value: 2
@@ -119,5 +131,33 @@ PrefabInstance:
       propertyPath: _eventToListen
       value: 
       objectReference: {fileID: 11400000, guid: 836bb86922f83684f8fb6ba21020bbd0, type: 2}
+    - target: {fileID: 7162197604560063828, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
+      propertyPath: _stateEventExitToListen.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7162197604560063828, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
+      propertyPath: _stateEventEnterToListen.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7162197604560063828, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
+      propertyPath: _stateEventExitToListen.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 7b06a80d9f612ba47bba723e94986bd3, type: 2}
+    - target: {fileID: 7162197604560063828, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
+      propertyPath: _stateEventExitToListen.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: f4c3161bc5507ac44b4792717b6ef22d, type: 2}
+    - target: {fileID: 7162197604560063828, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
+      propertyPath: _stateEventEnterToListen.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 2b8fde1fd9432d54ba5a54f9945a2c6f, type: 2}
+    - target: {fileID: 7162197604560063828, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
+      propertyPath: _stateEventEnterToListen.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 74b0f78d88a6d96489ebd3b32d6d4aae, type: 2}
+    - target: {fileID: 7181502792200813894, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
+      propertyPath: _eventToListen
+      value: 
+      objectReference: {fileID: 11400000, guid: 0d9fb3f97884939439901a922bc04f45, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 332922a6e76973847870736ff2b0ba74, type: 3}

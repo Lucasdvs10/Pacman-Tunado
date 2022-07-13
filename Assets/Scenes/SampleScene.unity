@@ -2272,30 +2272,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1821647555635356148, guid: fe3e3536eb18f7948bcdde7ce56f818e, type: 3}
-      propertyPath: _stateEventExitToListen.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1821647555635356148, guid: fe3e3536eb18f7948bcdde7ce56f818e, type: 3}
-      propertyPath: _stateEventEnterToListen.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1821647555635356148, guid: fe3e3536eb18f7948bcdde7ce56f818e, type: 3}
-      propertyPath: _stateEventExitToListen.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: 7b06a80d9f612ba47bba723e94986bd3, type: 2}
-    - target: {fileID: 1821647555635356148, guid: fe3e3536eb18f7948bcdde7ce56f818e, type: 3}
-      propertyPath: _stateEventExitToListen.Array.data[1]
-      value: 
-      objectReference: {fileID: 11400000, guid: f4c3161bc5507ac44b4792717b6ef22d, type: 2}
-    - target: {fileID: 1821647555635356148, guid: fe3e3536eb18f7948bcdde7ce56f818e, type: 3}
-      propertyPath: _stateEventEnterToListen.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: 2b8fde1fd9432d54ba5a54f9945a2c6f, type: 2}
-    - target: {fileID: 1821647555635356148, guid: fe3e3536eb18f7948bcdde7ce56f818e, type: 3}
-      propertyPath: _stateEventEnterToListen.Array.data[1]
-      value: 
-      objectReference: {fileID: 11400000, guid: 74b0f78d88a6d96489ebd3b32d6d4aae, type: 2}
     - target: {fileID: 5622115324914143581, guid: fe3e3536eb18f7948bcdde7ce56f818e, type: 3}
       propertyPath: _gridBehaviour
       value: 
@@ -2303,6 +2279,10 @@ PrefabInstance:
     - target: {fileID: 5622115324914143582, guid: fe3e3536eb18f7948bcdde7ce56f818e, type: 3}
       propertyPath: m_Name
       value: Fantasma Azul
+      objectReference: {fileID: 0}
+    - target: {fileID: 5622115324914143582, guid: fe3e3536eb18f7948bcdde7ce56f818e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5622115324914143587, guid: fe3e3536eb18f7948bcdde7ce56f818e, type: 3}
       propertyPath: m_RootOrder
@@ -2347,10 +2327,6 @@ PrefabInstance:
     - target: {fileID: 5622115324914143587, guid: fe3e3536eb18f7948bcdde7ce56f818e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5622115325136825479, guid: fe3e3536eb18f7948bcdde7ce56f818e, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe3e3536eb18f7948bcdde7ce56f818e, type: 3}
@@ -46567,30 +46543,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 752916208414040690, guid: 269aad5a48c557944b13e4292696a4cf, type: 3}
-      propertyPath: _stateEventExitToListen.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 752916208414040690, guid: 269aad5a48c557944b13e4292696a4cf, type: 3}
-      propertyPath: _stateEventEnterToListen.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 752916208414040690, guid: 269aad5a48c557944b13e4292696a4cf, type: 3}
-      propertyPath: _stateEventExitToListen.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: 63252581dcdafdd4985ae3882a52a72b, type: 2}
-    - target: {fileID: 752916208414040690, guid: 269aad5a48c557944b13e4292696a4cf, type: 3}
-      propertyPath: _stateEventExitToListen.Array.data[1]
-      value: 
-      objectReference: {fileID: 11400000, guid: c496a6442c0978749872b1895b26f171, type: 2}
-    - target: {fileID: 752916208414040690, guid: 269aad5a48c557944b13e4292696a4cf, type: 3}
-      propertyPath: _stateEventEnterToListen.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: 7eb840506efa29a46ba1f297c02a65a3, type: 2}
-    - target: {fileID: 752916208414040690, guid: 269aad5a48c557944b13e4292696a4cf, type: 3}
-      propertyPath: _stateEventEnterToListen.Array.data[1]
-      value: 
-      objectReference: {fileID: 11400000, guid: 8ba96da3193bc6549acecf4772b09c5b, type: 2}
     - target: {fileID: 6715126083625423576, guid: 269aad5a48c557944b13e4292696a4cf, type: 3}
       propertyPath: m_Name
       value: Fantasma Vermelho
@@ -46642,10 +46594,6 @@ PrefabInstance:
     - target: {fileID: 6715126083625423589, guid: 269aad5a48c557944b13e4292696a4cf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6715126083931533057, guid: 269aad5a48c557944b13e4292696a4cf, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 269aad5a48c557944b13e4292696a4cf, type: 3}
@@ -46712,14 +46660,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 371961456073740625, guid: 1362efe827dc4754b8e2019af12e266c, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7184064581119756487, guid: 1362efe827dc4754b8e2019af12e266c, type: 3}
-      propertyPath: _gameEventToRaise
-      value: 
-      objectReference: {fileID: 11400000, guid: d38eb83c390c44548a1a347bc77b415a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1362efe827dc4754b8e2019af12e266c, type: 3}
 --- !u!1001 &3954352907751925375
@@ -46867,30 +46807,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1693090692192553252, guid: 1a266e86a19f0ce4bbda4674cee1448c, type: 3}
-      propertyPath: _stateEventExitToListen.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1693090692192553252, guid: 1a266e86a19f0ce4bbda4674cee1448c, type: 3}
-      propertyPath: _stateEventEnterToListen.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1693090692192553252, guid: 1a266e86a19f0ce4bbda4674cee1448c, type: 3}
-      propertyPath: _stateEventExitToListen.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: b5c01c21f4c05fc47ad38c02fecd4158, type: 2}
-    - target: {fileID: 1693090692192553252, guid: 1a266e86a19f0ce4bbda4674cee1448c, type: 3}
-      propertyPath: _stateEventExitToListen.Array.data[1]
-      value: 
-      objectReference: {fileID: 11400000, guid: ca2d443fb5882f249bb295ea6be156d0, type: 2}
-    - target: {fileID: 1693090692192553252, guid: 1a266e86a19f0ce4bbda4674cee1448c, type: 3}
-      propertyPath: _stateEventEnterToListen.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: 39680cbb7c07f47459795ecb57b61f04, type: 2}
-    - target: {fileID: 1693090692192553252, guid: 1a266e86a19f0ce4bbda4674cee1448c, type: 3}
-      propertyPath: _stateEventEnterToListen.Array.data[1]
-      value: 
-      objectReference: {fileID: 11400000, guid: d84a7010156bfae40aeca3f05fee83c1, type: 2}
     - target: {fileID: 4628890998288382349, guid: 1a266e86a19f0ce4bbda4674cee1448c, type: 3}
       propertyPath: _gridBehaviour
       value: 
@@ -46947,10 +46863,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4628890998577923159, guid: 1a266e86a19f0ce4bbda4674cee1448c, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a266e86a19f0ce4bbda4674cee1448c, type: 3}
 --- !u!1001 &8442949606169614918
@@ -46960,37 +46872,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1607324549536405682, guid: c085874e5be560540bfb1c1e13f6e745, type: 3}
-      propertyPath: _stateEventExitToListen.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1607324549536405682, guid: c085874e5be560540bfb1c1e13f6e745, type: 3}
-      propertyPath: _stateEventEnterToListen.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1607324549536405682, guid: c085874e5be560540bfb1c1e13f6e745, type: 3}
-      propertyPath: _stateEventExitToListen.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: 16fdb3bfd52efe64d9d45a17611b0f31, type: 2}
-    - target: {fileID: 1607324549536405682, guid: c085874e5be560540bfb1c1e13f6e745, type: 3}
-      propertyPath: _stateEventExitToListen.Array.data[1]
-      value: 
-      objectReference: {fileID: 11400000, guid: 32c1bcd4af4c0434ea10937c7d301401, type: 2}
-    - target: {fileID: 1607324549536405682, guid: c085874e5be560540bfb1c1e13f6e745, type: 3}
-      propertyPath: _stateEventEnterToListen.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: 577550f020491264e965214086f2e16d, type: 2}
-    - target: {fileID: 1607324549536405682, guid: c085874e5be560540bfb1c1e13f6e745, type: 3}
-      propertyPath: _stateEventEnterToListen.Array.data[1]
-      value: 
-      objectReference: {fileID: 11400000, guid: fe6611d026893814090789c34dd401f5, type: 2}
-    - target: {fileID: 4108707703124690727, guid: c085874e5be560540bfb1c1e13f6e745, type: 3}
-      propertyPath: m_BodyType
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4687213655152060440, guid: c085874e5be560540bfb1c1e13f6e745, type: 3}
       propertyPath: m_Name
       value: Fantasma Rosa
+      objectReference: {fileID: 0}
+    - target: {fileID: 4687213655152060440, guid: c085874e5be560540bfb1c1e13f6e745, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4687213655152060443, guid: c085874e5be560540bfb1c1e13f6e745, type: 3}
       propertyPath: _gridBehaviour
@@ -47039,10 +46927,6 @@ PrefabInstance:
     - target: {fileID: 4687213655152060453, guid: c085874e5be560540bfb1c1e13f6e745, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4687213655449933249, guid: c085874e5be560540bfb1c1e13f6e745, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c085874e5be560540bfb1c1e13f6e745, type: 3}
