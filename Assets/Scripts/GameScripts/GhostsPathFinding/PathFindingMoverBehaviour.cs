@@ -40,7 +40,7 @@ namespace GameScripts.GhostsPathFinding{
        }
 
        private void OnDisable() {
-           StopMoveToTargetCoroutine();
+           StopAllCoroutines();
        }
 
        private void Update() {

@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2ac0a17d816644b283d24a91ff276501, type: 3}
-  m_Name: RoundState
+  m_Name: PauseState
   m_EditorClassIdentifier: 
   _stateActionsOnExecuteList: []
   _stateActionsOnStateEnterList: []
   _stateActionsOnStateExitList: []
-  _stateTransionsList: []
+  _stateTransionsList:
+  - {fileID: 11400000, guid: d4094b2226c3c4d4797a3daa407e82fb, type: 2}
   _onExecuteStateEvent: {fileID: 0}
-  _onEnterStateEvent: {fileID: 0}
-  _onExitStateEvent: {fileID: 0}
+  _onEnterStateEvent: {fileID: 11400000, guid: cc7cade2514e15845965fe54d9c267ec, type: 2}
+  _onExitStateEvent: {fileID: 11400000, guid: 8f71d56b4aa6e714eb8decc733eedce0, type: 2}

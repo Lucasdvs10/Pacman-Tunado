@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1155528533}
   - component: {fileID: 1155528534}
   - component: {fileID: 1155528535}
+  - component: {fileID: 1694923172454048619}
   m_Layer: 0
   m_Name: Mochila_Ions
   m_TagString: Untagged
@@ -77,6 +78,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b70a75b43ba43a8819a44e19324a8fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _event: {fileID: 11400000, guid: a33eb17e79660b94088b7c942e75e973, type: 2}
+  _batteryAmountSingleton: {fileID: 11400000, guid: 925624e18e9009b4c8e3cf7a46b2702f, type: 2}
+  _costToActivateGun: 1
 --- !u!114 &1155528535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91,6 +95,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _eventWhenPerformButton: {fileID: 11400000, guid: a33eb17e79660b94088b7c942e75e973, type: 2}
   _eventWhenCancelButton: {fileID: 11400000, guid: ed819e023a2233846ade6d4f3866ab03, type: 2}
+--- !u!114 &1694923172454048619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155528530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f61b875f70064692a23af3e22fc9fd46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEventToRaise: {fileID: 11400000, guid: 41b553bdc6f50264f913e27225971627, type: 2}
+  _batteryAmountSingleton: {fileID: 11400000, guid: 925624e18e9009b4c8e3cf7a46b2702f, type: 2}
+  _eventToAddOneBattery: {fileID: 11400000, guid: 9d3d1313482d47145a5d1ac430339215, type: 2}
 --- !u!1 &8965433597188179201
 GameObject:
   m_ObjectHideFlags: 0
@@ -203,6 +222,8 @@ GameObject:
   - component: {fileID: -233079678871393351}
   - component: {fileID: -1746543345557040212}
   - component: {fileID: 593556442}
+  - component: {fileID: 1573235967}
+  - component: {fileID: 1573235968}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -370,3 +391,59 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameEventToRaise: {fileID: 11400000, guid: ae811942cdaad024eb9809853c8ef2d3, type: 2}
+--- !u!114 &1573235967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8965433597640332487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50d96212f004408b84e6914e0ea454ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventToListen: {fileID: 11400000, guid: 8f71d56b4aa6e714eb8decc733eedce0, type: 2}
+  UnityEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8965433597640332482}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!114 &1573235968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8965433597640332487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50d96212f004408b84e6914e0ea454ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventToListen: {fileID: 11400000, guid: cc7cade2514e15845965fe54d9c267ec, type: 2}
+  UnityEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8965433597640332482}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

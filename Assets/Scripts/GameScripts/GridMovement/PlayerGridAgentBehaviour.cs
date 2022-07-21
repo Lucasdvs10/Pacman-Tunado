@@ -20,14 +20,10 @@ namespace GameScripts{
         
         private void Start() {
             _gridAgent = new GridAgent(_gridBehaviour.Grid, _initialPosition);
-            _gridAgent.OnPositionChangedEvent += InvokeEvent;
-            
             transform.position = _gridAgent.WorldPosition;
-            StartCoroutine(MoveInGridCoroutine());
+            _gridAgent.OnPositionChangedEvent += InvokeEvent;
         }
-
-
-
+        
         public override void InvokeEvent() {
             transform.position = _gridAgent.WorldPosition;
             GridPositionSingleton.Value = _gridAgent.PositionInGrid;
@@ -38,8 +34,8 @@ namespace GameScripts{
             if(ctx.started) return;
             InputDirection = ctx.ReadValue<Vector2>();
         }
-        
-        public IEnumerator MoveInGridCoroutine() {
+
+        private IEnumerator MoveInGridCoroutine() {
             while(true){
                 if(_inputDirection != Vector2.zero) {
                     _gridAgent.Move(new Vector2Int((int) -_inputDirection.y, (int) _inputDirection.x));
@@ -50,10 +46,14 @@ namespace GameScripts{
             }
         }
 
-        private void OnDisable() {
-            _gridAgent.OnPositionChangedEvent -= InvokeEvent;
+        private void OnEnable() {
+            StartCoroutine(MoveInGridCoroutine());
         }
-        
+
+        private void OnDisable() {
+            StopAllCoroutines();
+        }
+
         public void TurnCanWalkOn() {
             _gridAgent.CanWalk = true;
         }
