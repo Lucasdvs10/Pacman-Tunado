@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using GameScripts.GameEvent;
 using GameScripts.SOSingletons;
@@ -32,10 +33,17 @@ namespace GameScripts.GhostsPathFinding{
             _pathCalculator = new AStarCalculator(_grid);
             _gridAgent = new GridAgent(_grid, _grid.WorldPosToGridPos(transform.position));
             GridPosition = _gridAgent.PositionInGrid;
-            StartMoveToTargetCoroutine();
        }
 
-        private void Update() {
+       private void OnEnable() {
+           StartMoveToTargetCoroutine();
+       }
+
+       private void OnDisable() {
+           StopMoveToTargetCoroutine();
+       }
+
+       private void Update() {
             transform.position = _gridAgent.WorldPosition;
         }
 
