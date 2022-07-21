@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5796d0a38cc4c9cb9a4250075f3208b, type: 3}
   m_Name: GhostCollisionPlayerListener
   m_EditorClassIdentifier: 
-  _eventToListen: {fileID: 0}
+  _eventToListen: {fileID: 11400000, guid: 43add53e44813374883267c6676ec9c5, type: 2}

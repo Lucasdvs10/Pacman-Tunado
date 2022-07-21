@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3769b01644c483aa0f29314a1c69c4d, type: 3}
   m_Name: RoundToTrueGameOver
   m_EditorClassIdentifier: 
-  _decider: {fileID: 0}
-  _stateWhenTrue: {fileID: 0}
+  _decider: {fileID: 11400000, guid: 2f97ddb36d31f024b814978e6025cdc4, type: 2}
+  _stateWhenTrue: {fileID: 11400000, guid: 37b287e215913784ea8a666a28c54620, type: 2}
   _stateWhenFalse: {fileID: 0}
