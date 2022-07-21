@@ -24,7 +24,8 @@ public class DisplaySingletonIntValue : MonoBehaviour{
         _event.Unsubscribe(UpdateText);
     }
 
-    private void UpdateText() {
+    private void UpdateText()
+    {
         _text.text = _singletonToDisplay.Value.ToString();
     }
     
