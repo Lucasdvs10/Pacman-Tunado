@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1065241743}
   - component: {fileID: 1065241742}
   m_Layer: 0
-  m_Name: TileMapReader
+  m_Name: NotWalkableTilesSetter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46,6 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tilemap: {fileID: 0}
   _gridBehaviour: {fileID: 3954352907865972100}
+  _avaibleCellsSingleton: {fileID: 11400000, guid: 8857427d1e530954a89d833dce3f9db0, type: 2}
 --- !u!1 &3954352907865972102
 GameObject:
   m_ObjectHideFlags: 0
@@ -95,3 +96,4 @@ MonoBehaviour:
   columns: 32
   offSetX: 1
   offSetY: 1
+  _sizeSingleton: {fileID: 11400000, guid: f9dd9fb806fc8a44389c624fa5521e26, type: 2}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5237813998062741211}
   - component: {fileID: 5237813998062741204}
   m_Layer: 5
-  m_Name: PauseTxt
+  m_Name: BaseTxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

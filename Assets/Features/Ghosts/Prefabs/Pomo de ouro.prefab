@@ -23,6 +23,10 @@ PrefabInstance:
       propertyPath: _initialState
       value: 
       objectReference: {fileID: 11400000, guid: 6b79bf8759499624182d08f8d7f612c3, type: 2}
+    - target: {fileID: 2461823739390650561, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3758027471323201575, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
       propertyPath: m_Color.b
       value: 0.074893214
@@ -101,7 +105,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3758027471629843966, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5081970216963602030, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
       propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -134,7 +138,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 3534845127472746870}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 26ded6ee7e104cf18a1eb3b6e48ea7da, type: 3}
   m_Name: 

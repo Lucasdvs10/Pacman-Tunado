@@ -153,7 +153,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &817175456
 RectTransform:
   m_ObjectHideFlags: 0
@@ -280,9 +280,17 @@ PrefabInstance:
       propertyPath: m_text
       value: Pause
       objectReference: {fileID: 0}
+    - target: {fileID: 5237813998062741206, guid: 964f2850ae1ff3b43a892dc6e7a678a2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5237813998212030068, guid: 964f2850ae1ff3b43a892dc6e7a678a2, type: 3}
       propertyPath: m_Name
       value: PausePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 5237813998212030072, guid: 964f2850ae1ff3b43a892dc6e7a678a2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5237813998212030073, guid: 964f2850ae1ff3b43a892dc6e7a678a2, type: 3}
       propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -382,6 +390,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5237813998212030075, guid: 964f2850ae1ff3b43a892dc6e7a678a2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5237813999527126910, guid: 964f2850ae1ff3b43a892dc6e7a678a2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5237814000024250584, guid: 964f2850ae1ff3b43a892dc6e7a678a2, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

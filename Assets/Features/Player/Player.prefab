@@ -224,6 +224,7 @@ GameObject:
   - component: {fileID: 593556442}
   - component: {fileID: 1573235967}
   - component: {fileID: 1573235968}
+  - component: {fileID: 1573235969}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -336,6 +337,23 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: fa67c326-f381-44fe-bab2-4bda0f988015
     m_ActionName: Player/ActivateMochila[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1573235969}
+        m_TargetAssemblyTypeName: GameScripts.InputSystem.InvokeEventOnceAtInput,
+          CoreAssembly
+        m_MethodName: InvokeEvents
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 876a01cf-a75a-4292-8f19-7a85af6644ed
+    m_ActionName: Player/PauseResume[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -407,10 +425,10 @@ MonoBehaviour:
   UnityEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8965433597640332482}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
+      - m_Target: {fileID: 8965433597640332484}
+        m_TargetAssemblyTypeName: GameScripts.PlayerGridAgentBehaviour, CoreAssembly
+        m_MethodName: TurnCanWalkOn
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -435,10 +453,10 @@ MonoBehaviour:
   UnityEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8965433597640332482}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
+      - m_Target: {fileID: 8965433597640332484}
+        m_TargetAssemblyTypeName: GameScripts.PlayerGridAgentBehaviour, CoreAssembly
+        m_MethodName: TurnCanWalkOff
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -447,3 +465,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1573235969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8965433597640332487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b75c18d1bc2247f098644326a5536b0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventWhenPerformButton: {fileID: 11400000, guid: 3cad3bb56b6d990419f91c94ea97db29, type: 2}
+  _eventWhenCancelButton: {fileID: 0}
