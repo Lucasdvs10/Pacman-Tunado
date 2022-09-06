@@ -127,6 +127,10 @@ PrefabInstance:
       propertyPath: _eventToListen
       value: 
       objectReference: {fileID: 11400000, guid: 960d08a1dea54884cb356bec8300bc04, type: 2}
+    - target: {fileID: 7162197604560063828, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
+      propertyPath: _gameEventToRaise
+      value: 
+      objectReference: {fileID: 11400000, guid: d38eb83c390c44548a1a347bc77b415a, type: 2}
     m_RemovedComponents:
     - {fileID: -5370406216790352215, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
     - {fileID: 7181502792200813894, guid: 332922a6e76973847870736ff2b0ba74, type: 3}
