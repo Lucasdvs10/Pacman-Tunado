@@ -1,7 +1,7 @@
 ﻿using NUnit.Framework;
 
 namespace UnitTests {
-    public class Life_Should {
+    public class Life_Controller_Should {
         private LifeController _lifeController;
         
         [SetUp]
