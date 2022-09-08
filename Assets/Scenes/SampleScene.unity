@@ -46419,8 +46419,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 102f6d3a1a909434e897ca1dd05ed196, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _singletonToDisplay: {fileID: 0}
-  _event: {fileID: 0}
+  _singletonToDisplay: {fileID: 11400000, guid: 61d3714bea732394eaebb0836ec98bed, type: 2}
+  _event: {fileID: 11400000, guid: 636944abd4db9384e8397159a8bbc8fb, type: 2}
 --- !u!114 &2045960649
 MonoBehaviour:
   m_ObjectHideFlags: 0
