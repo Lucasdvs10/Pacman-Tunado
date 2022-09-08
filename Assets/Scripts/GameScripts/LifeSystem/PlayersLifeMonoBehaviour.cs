@@ -1,17 +1,20 @@
 ﻿using System.Collections.Generic;
 using GameScripts.GameEvent;
+using GameScripts.SOSingletons;
 using UnitTests;
 using UnityEngine;
 
 namespace GameScripts.LifeSystem {
     public class PlayersLifeMonoBehaviour : MonoBehaviour {
         [SerializeField] private int _initialLifeAmount;
+        [SerializeField] private SOSingleInt _lifeAmountSingleton;
+        [SerializeField] private List<SOGameEvent> _eventsToApplyDamageOnPlayer;
+        [SerializeField] private List<SOGameEvent> _eventsToCurePlayer;
         private LifeController _lifeController;
-        private List<SOGameEvent> _eventsToApplyDamageOnPlayer;
-        private List<SOGameEvent> _eventsToCurePlayer;
 
         private void Awake() {
             _lifeController = new LifeController(_initialLifeAmount);
+            _lifeAmountSingleton.Value = _lifeController.GetCurrentLife();
         }
 
         private void OnEnable() {
@@ -35,9 +38,15 @@ namespace GameScripts.LifeSystem {
             }
         }
         
-        public void ApplyDamage() => _lifeController.ApplyDamage(1);
+        public void ApplyDamage() {
+            _lifeController.ApplyDamage(1);
+            _lifeAmountSingleton.Value = _lifeController.GetCurrentLife();
+        }
 
-        public void AddOneLifeOnPlayer() => _lifeController.ApplyDamage(-1);
+        public void AddOneLifeOnPlayer() {
+            _lifeController.ApplyDamage(-1);
+            _lifeAmountSingleton.Value = _lifeController.GetCurrentLife();
+        }
 
     }
 }
